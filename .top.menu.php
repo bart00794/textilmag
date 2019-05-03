@@ -1,0 +1,46 @@
+<?
+$aMenuLinks = Array(
+	Array(
+		"Главная", 
+		"http://textilmag.ru/index.php", 
+		Array(), 
+		Array(), 
+		"" 
+	),
+	Array(
+		"О нас", 
+		"http://textilmag.ru/about/", 
+		Array(), 
+		Array(), 
+		"" 
+	),
+	Array(
+		"Каталог", 
+		"http://textilmag.ru/products/", 
+		Array(), 
+		Array(), 
+		"" 
+	),
+	Array(
+		"Как заказать", 
+		"http://textilmag.ru/kak-zakazat/", 
+		Array(), 
+		Array(), 
+		"" 
+	),
+	Array(
+		"Прайс", 
+		"http://textilmag.ru/kak-zakazat/price.xlsx", 
+		Array(), 
+		Array(), 
+		"" 
+	),
+	Array(
+		"Контакты", 
+		"http://textilmag.ru/contacts/", 
+		Array(), 
+		Array(), 
+		"" 
+	)
+);
+?>

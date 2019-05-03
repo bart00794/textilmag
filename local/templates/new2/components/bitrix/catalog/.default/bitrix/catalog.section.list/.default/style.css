@@ -1,0 +1,28 @@
+div.product_main {
+height: 405px;
+position: relative;
+border-radius: 4px;
+margin-bottom: 10px;
+background-color:#f3f7de;
+}
+.block123 {
+position: absolute;
+top: 345px;
+width: 100%;
+}
+strong.product-name {
+color: #5c443d;
+text-align: center;
+display: block;
+text-decoration: underline;
+padding: 10px 0 10px 0;
+}
+strong.product-price {
+}
+div.product-image {
+padding-top:15px;
+}
+div.product-image img{
+margin: 0 auto;
+display:block;
+}

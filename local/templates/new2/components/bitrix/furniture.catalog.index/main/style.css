@@ -1,0 +1,21 @@
+div.product_main {
+background-color:#f3f7de;
+margin-bottom:10px;
+height:340px;
+}
+strong.product-name {
+color: #5c443d;
+text-align: center;
+display: block;
+text-decoration: underline;
+padding: 10px 0 10px 0;
+}
+strong.product-price {
+}
+div.product-image {
+padding-top:15px;
+}
+div.product-image img{
+margin: 0 auto;
+display:block;
+}

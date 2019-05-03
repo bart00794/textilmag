@@ -1,0 +1,24 @@
+<?if (!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED!==true) die(); ?>
+<?
+	$MESS["NOTBASKET"] = "В корзине сейчас ничего нет. ";
+	$MESS["LINKSTOVAR"] = "Перейти к покупкам.";
+	$MESS["POLE1"] = "Товар";
+	$MESS["POLE2"] = "Название";
+	$MESS["POLE3"] = "Цена";
+	$MESS["POLE4"] = "Количество";
+	$MESS["RUB"] = "руб.";
+	$MESS["SHIUK"] = "шт.";
+	$MESS["ITOG"] = "Итого:";
+	$MESS["ZAKAZ"] = "Оформление заказа";
+	$MESS["NAME"] = "Ваше имя ";
+	$MESS["MAIL"] = "Email";
+	$MESS["PHONE"] = "Телефон "; 
+	$MESS["DOSTAVKA"] = "Способ доставки";  
+	$MESS["SELECTED"] = "-- Выберите --";  
+	$MESS["ADRESS"] = "Адрес доставки"; 
+	$MESS["COMMENT"] = "Комментарий к заказу";
+	$MESS["NOTNULLPOLE"] = " — поля, обязательные для заполнения";
+	$MESS["SEARCH"] = "Отправить сообщение";
+	$MESS["SEARCHZAKAZOK"] = "Ваш заказ отправлен!";
+	$MESS["SEARCHZAKAZOKDESC"] = "Мы свяжемся с вами для уточнения условий доставки и оплаты в течение 24 часов.";
+?>	

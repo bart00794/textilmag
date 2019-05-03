@@ -1,0 +1,228 @@
+.tablebasket {
+position:relative;
+z-index:1;
+}
+.tablebasket > tbody > tr > td {
+vertical-align: middle !important;
+}
+
+
+
+
+
+
+.errorbasket {
+	margin-right: 0px!important;
+}
+.elementblock {
+	float: left;
+	margin-bottom: 8px;
+	width: 100%;
+}
+.elementblock .imgt img {
+	padding: 10px;
+    border: 1px solid #EDEDED;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;	
+	max-width:150px;
+}
+.elementblock .namet {
+	color:#868686;
+	font-size: 14px;
+}
+.elementblock .namet a{
+	color:#3E3E3E;
+	text-decoration: none;
+	font-size: 14px;
+	
+}
+.elementblock .namet a:hover {
+	color: #EE3124;
+}
+
+.elementblock .cenat {
+	color:#EE3124;
+	font-size: 20px;
+}
+.elementblock .cenat strike{
+	color: #FF6A00;
+	font-size: 16px;
+}
+.elementblock .countt {
+	color:#868686;
+	font-size: 14px;
+}
+.elementblock .countt input{
+	width: 60px;
+	height: 16px;
+    border: 1px solid #EDEDED;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;		
+	margin-right: 4px;
+	text-align: center;
+}
+.headbask li {
+	color: #3b3a3a;
+	font-size: 15px;
+	height: 40px;
+}
+.headbask ul{
+	list-style:none;
+}
+.elementblock ul {
+	list-style:none;
+}
+.myh {
+	color: #424242!important;
+	font-size: 14px!important;
+	width: 100%!important;
+	margin-bottom: 6px!important;
+	margin-top: 7px!important;
+}
+.itogo{
+	color: #3b3a3a;
+	font-size: 24px !important;
+	height: 50px;
+	width: 100%;
+}
+.itogo span{
+	color: #EE3124;
+	font-size: 24px;
+	float: right;
+	margin-right: 50px;
+	line-height: 30px;
+}
+.addcmment {
+    background: none repeat scroll 0 0 #F2F2F2;
+    border-radius: 10px 10px 10px 10px;
+    float: left;
+    height: 374px;
+    margin: 20px 0 0 140px;
+    width: 436px;
+}
+.addcmment>div {
+    color: #979697;
+    margin-bottom: 10px;
+    margin-left: 30px;
+}
+.addcmment>div strong {
+    color: #ee3124;
+}
+.addcmment>div span {
+    color: #6C6B6B;
+    float: left;
+    font-size: 14px;
+    width: 100px;
+}
+.addcmment div textarea:focus, .addcmment div input:focus {
+    border: 1px solid #F2B976 !important;
+}
+.addcmment div textarea {
+    border: 1px solid #CDCECE;
+    border-radius: 5px 5px 5px 5px;
+    height: 120px;
+    width: 240px;
+}
+.addcmment div input {
+    border: 1px solid #CDCECE;
+    border-radius: 5px 5px 5px 5px;
+    height: 20px;
+    padding-left: 4px;
+    padding-right: 4px;
+    width: 240px;
+}
+.psevdoh1.center {
+    margin-left: 0;
+    text-align: center;
+	margin-top: 12px;
+	margin-bottom: 10px;
+}
+.comment li {
+    float: left;
+    margin-left: 6px;
+    margin-right: 6px;
+    width: 46%;
+	padding: 6px;
+	background:#F2F2F2;
+    border: 1px solid gray;
+	-moz-border-radius: 5px; /* Firefox */
+	-webkit-border-radius: 5px; /* Safari and Chrome */
+	border-radius: 5px; /* Opera 10.5+, future browsers, and now also Internet Explorer 6+ using IE-CSS3 */	
+}
+.comment li .ktosend {
+    color: #EE3124;
+    margin-bottom: 2px;
+	font-size: 14px;
+}
+.comment li .ktosend span {
+    color: #868686;
+    display: inline-block;
+    font-size: 12px;
+    margin-top: 1px;
+}
+.comment .clearleft {
+    clear: left;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    width: 100%;
+	background: none;
+	border: none;
+}
+.textdet {
+    margin-left: 6px;
+}
+.addcmment>div {
+    position: relative;
+}
+.addcmment p {
+    bottom: 0;
+    display: none;
+    float: right !important;
+    margin-bottom: 0 !important;
+    position: absolute;
+    right: 0;
+    width: auto;
+}
+.eror textarea {
+    border: 1px solid red !important;
+}
+.eror input {
+    border: 1px solid red !important;
+}
+.addcmment .eror p {
+    color: #ee3124;
+    display: block !important;
+    font-size: 14px;
+	margin-right: 10px;
+	vertical-align: middle;
+}
+.addcmment .psevdoh1 {
+	margin-bottom: 20px;
+	margin-top: 20px;
+}
+.basketformm.addcmment .eror p {
+    color: #ee3124;
+    display: block !important;
+    font-size: 14px;
+    margin-right: -180px;
+}
+.addcmment .eror p img {
+    margin-right: 8px;
+}
+.basketformm div>span {
+    width: 126px !important;
+}
+.basketformm div>span#dostavka-styler {
+	width: auto !important;
+	margin-bottom: 10px;
+}
+.basketformm {
+    height: 616px !important;
+    margin-top: 40px;
+    width: 450px !important;
+}
+.addcmment  input[type="button"] {
+    margin-left: 240px;
+}

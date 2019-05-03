@@ -1,0 +1,10 @@
+#small_basket {
+position: fixed;
+right: 10px;
+top: 150px;
+z-index: 40;
+background-color: #fff;
+border: 1px solid #590732;
+border-radius: 6px;
+padding: 5px;
+}
