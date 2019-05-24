@@ -12,7 +12,7 @@ $APPLICATION->SetTitle("Купить текстиль оптом \"ТекстильМаг\": полотенца, кухонн
         </div>
     </div>
 
-    <!-- Banner Area Start Here -->
+<?if(false){?>
     <div class="banner-area pt--80 pt-md--60 pb--30 pb-md--25">
         <div class="container-fluid">
             <div class="row">
@@ -58,8 +58,7 @@ $APPLICATION->SetTitle("Купить текстиль оптом \"ТекстильМаг\": полотенца, кухонн
             </div>
         </div>
     </div>
-    <!-- Banner Area End Here -->
-
+<?}?>
     <!-- Product tab area Start Here -->
     <section class="product-tab-area ptb--40 ptb-md--30">
         <div class="container-fluid">

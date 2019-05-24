@@ -10,7 +10,7 @@
                 <div class="footer-widget">
                     <div class="textwidget">
                         <a href="index.html" class="footer-logo">
-                            <img src="<?=SITE_TEMPLATE_PATH;?>/img/logo/logo.svg" alt="Logo">
+                            <img src="<?=SITE_TEMPLATE_PATH;?>/img/logo/logo.png" alt="Logo">
                         </a>
                     </div>
                 </div>

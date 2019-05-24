@@ -1,8 +1,7 @@
 @font-face {
   font-family: "dl-icon";
   src: url("../fonts/dl-iconeb4f.eot?v=1.1.");
-  src: url("../fonts/dl-icon0176??v=1.1.#iefix") format("embedded-opentype"),
-       url("../fonts/dl-iconeb4f.woff?v=1.1.") format("woff"),
+  src: url("../fonts/dl-iconeb4f.woff?v=1.1.") format("woff"),
        url("../fonts/dl-iconeb4f.ttf?v=1.1.") format("truetype"),
        url("../fonts/dl-iconf9e3.svg?v=1.1") format("svg");
   font-weight: normal;

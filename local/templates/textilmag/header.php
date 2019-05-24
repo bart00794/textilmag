@@ -3,28 +3,20 @@
 use Bitrix\Main\Page\Asset;
 
 //CSS Files
-
 Asset::getInstance()->addCss(SITE_TEMPLATE_PATH . '/css/bootstrap.min.css');
 Asset::getInstance()->addCss(SITE_TEMPLATE_PATH . '/css/font-awesome.min.css');
 Asset::getInstance()->addCss(SITE_TEMPLATE_PATH . '/css/dl-icon.css');
-Asset::getInstance()->addCss(SITE_TEMPLATE_PATH . '/css/plugins.css');
-Asset::getInstance()->addCss(SITE_TEMPLATE_PATH . '/css/revoulation.css');
 Asset::getInstance()->addCss(SITE_TEMPLATE_PATH . '/css/main.css');
+Asset::getInstance()->addCss(SITE_TEMPLATE_PATH . '/css/styles.css');
 
 //JS Files
-
-Asset::getInstance()->addJs(SITE_TEMPLATE_PATH . '/js/vendor/modernizr-2.8.3.min.js');
-Asset::getInstance()->addJs(SITE_TEMPLATE_PATH . '/js/vendor/jquery.min.js');
-Asset::getInstance()->addJs(SITE_TEMPLATE_PATH . '/js/vendor/jquery.min.js');
-
-Asset::getInstance()->addJs(SITE_TEMPLATE_PATH . '/js/bootstrap.bundle.min.js');
-Asset::getInstance()->addJs(SITE_TEMPLATE_PATH . '/js/plugins.js');
-Asset::getInstance()->addJs(SITE_TEMPLATE_PATH . '/js/ajax-mail.js');
-Asset::getInstance()->addJs(SITE_TEMPLATE_PATH . '/js/main.js');
+Asset::getInstance()->addJs(SITE_TEMPLATE_PATH . '/js/jquery-3.4.1.min.js');
+Asset::getInstance()->addJs(SITE_TEMPLATE_PATH . '/js/bootstrap.min.js');
+Asset::getInstance()->addJs(SITE_TEMPLATE_PATH . '/js/scripts.js');
 
 ?>
 <!doctype html>
-<html class="no-js" lang="zxx">
+<html class="no-js" lang="ru">
 <head>
     <? $APPLICATION->ShowHead(); ?>
 
@@ -32,7 +24,7 @@ Asset::getInstance()->addJs(SITE_TEMPLATE_PATH . '/js/main.js');
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="meta description">
-    <!-- Favicons -->
+    <title><?=$APPLICATION->ShowTitle();?></title>
     <link rel="shortcut icon" href="<?= SITE_TEMPLATE_PATH; ?>/img/favicon.ico" type="image/x-icon">
     <link rel="apple-touch-icon" href="<?= SITE_TEMPLATE_PATH; ?>/img/icon.png">
 
@@ -56,27 +48,18 @@ Asset::getInstance()->addJs(SITE_TEMPLATE_PATH . '/js/main.js');
         <div class="header-inner fixed-header">
             <div class="container-fluid">
                 <div class="row align-items-center">
-                    <div class="col-lg-2 col-md-3 col-4 order-1">
+                    <div class="col-lg-3 col-md-3 col-4 order-1">
                         <div class="header-left d-flex">
                             <!-- Logo Start Here -->
                             <a href="/" class="logo-box">
-                                <figure class="logo--normal">
+<!--                                <figure class="logo--normal">-->
                                     <img src="<?= SITE_TEMPLATE_PATH; ?>/img/logo/logo.png" alt="Logo" class="img-fluid"/>
-                                </figure>
+<!--                                </figure>-->
                             </a>
-                            <!-- Logo End Here -->
-
-                            <ul class="header-toolbar">
-                                <li class="header-toolbar__item d-none d-lg-block">
-                                    <a href="#sideNav" class="toolbar-btn">
-                                        <i class="dl-icon-menu2"></i>
-                                    </a>
-                                </li>
-                            </ul>
                         </div>
                     </div>
 
-                    <div class="col-lg-8 order-3 order-lg-2">
+                    <div class="col-lg-6 order-3 order-lg-2">
                         <?
                         $APPLICATION->IncludeComponent(
                             "bitrix:menu",
@@ -99,52 +82,63 @@ Asset::getInstance()->addJs(SITE_TEMPLATE_PATH . '/js/main.js');
                         ?>
                     </div>
 
-                    <div class="col-lg-2 col-md-9 col-8 order-2 order-lg-3">
-                        <ul class="header-toolbar text-right">
-                            <li class="header-toolbar__item user-info-menu-btn">
-                                <a href="#">
-                                    <i class="fa fa-user-circle-o"></i>
-                                </a>
-                                <ul class="user-info-menu">
-                                    <li>
-                                        <a href="my-account.html">My Account</a>
-                                    </li>
-                                    <li>
-                                        <a href="cart.html">Shopping Cart</a>
-                                    </li>
-                                    <li>
-                                        <a href="checkout.html">Check Out</a>
-                                    </li>
-                                    <li>
-                                        <a href="wishlist.html">Wishlist</a>
-                                    </li>
-                                    <li>
-                                        <a href="order-tracking.html">Order tracking</a>
-                                    </li>
-                                    <li>
-                                        <a href="compare.html">compare</a>
-                                    </li>
-                                </ul>
-                            </li>
-                            <li class="header-toolbar__item">
-                                <a href="#miniCart" class="mini-cart-btn toolbar-btn">
-                                    <i class="dl-icon-cart4"></i>
-                                    <sup class="mini-cart-count">2</sup>
-                                </a>
-                            </li>
-                            <li class="header-toolbar__item">
-                                <a href="#searchForm" class="search-btn toolbar-btn">
-                                    <i class="dl-icon-search1"></i>
-                                </a>
-                            </li>
-                            <li class="header-toolbar__item d-lg-none">
-                                <a href="#" class="menu-btn"></a>
-                            </li>
-                        </ul>
+                    <div class="col-lg-3 col-md-9 col-8 order-2 order-lg-3">
+                        <div class="header-middle-right">
+                            <div class="searchform-wrapper d-none d-lg-block">
+                                <form action="#" class="searchform searchform-2">
+                                    <input type="text" class="searchform__input" id="search2" name="search" placeholder="Search Here...">
+                                    <button type="submit" class="searchform__submit">
+                                        <i class="dl-icon-search1"></i>
+                                    </button>
+                                </form>
+                            </div>
+                            <ul class="header-toolbar text-right">
+                                <li class="header-toolbar__item d-none d-lg-block">
+                                    <a href="#sideNav" class="toolbar-btn">
+                                        <i class="dl-icon-menu2"></i>
+                                    </a>
+                                </li>
+                                <li class="header-toolbar__item user-info-menu-btn">
+                                    <a href="#">
+                                        <i class="fa fa-user-circle-o"></i>
+                                    </a>
+                                    <ul class="user-info-menu">
+                                        <li>
+                                            <a href="my-account.html">My Account</a>
+                                        </li>
+                                        <li>
+                                            <a href="cart.html">Shopping Cart</a>
+                                        </li>
+                                        <li>
+                                            <a href="checkout.html">Check Out</a>
+                                        </li>
+                                        <li>
+                                            <a href="wishlist.html">Wishlist</a>
+                                        </li>
+                                        <li>
+                                            <a href="order-tracking.html">Order tracking</a>
+                                        </li>
+                                        <li>
+                                            <a href="compare.html">compare</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="header-toolbar__item">
+                                    <a href="#miniCart" class="mini-cart-btn toolbar-btn">
+                                        <i class="dl-icon-cart4"></i>
+                                        <sup class="mini-cart-count">2</sup>
+                                    </a>
+                                </li>
+                                <li class="header-toolbar__item d-lg-none">
+                                    <a href="#" class="menu-btn"></a>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
+        <div class="fixed-header__base" style="display: none"></div>
     </header>
     <!-- Header Area End -->
 
@@ -155,7 +149,7 @@ Asset::getInstance()->addJs(SITE_TEMPLATE_PATH . '/js/main.js');
                 <div class="col-4">
                     <a href="index.html" class="logo-box">
                         <figure class="logo--normal">
-                            <img src="<?= SITE_TEMPLATE_PATH; ?>/img/logo/logo.svg" alt="Logo">
+                            <img src="<?= SITE_TEMPLATE_PATH; ?>/img/logo/logo.png" alt="Logo">
                         </figure>
                     </a>
                 </div>
