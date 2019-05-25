@@ -1,6 +1,7 @@
 <? if (!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED !== true) die();
 
 use Bitrix\Main\Page\Asset;
+use Bitrix\Main\Context;
 
 //CSS Files
 Asset::getInstance()->addCss(SITE_TEMPLATE_PATH . '/css/bootstrap.min.css');
@@ -603,7 +604,23 @@ Asset::getInstance()->addJs(SITE_TEMPLATE_PATH . '/js/scripts.js');
             </div>
         </div>
     </header>
-    <!-- Mobile Header area End -->
-
+    <?
+    $request = Context::getCurrent()->getRequest();
+    if(!($request->getRequestedPage() == "/index.php")){?>
+        <!-- Mobile Header area End -->
+        <div class="breadcrumb-area bg--white-6 pt--10 pb--10">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-12 text-center">
+                        <h1 class="page-title"><?=$APPLICATION->ShowTitle(false);?></h1>
+                        <ul class="breadcrumb justify-content-center">
+                            <li><a href="index.html">Home</a></li>
+                            <li class="current"><span>Shop Pages</span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    <?}?>
     <!-- Main Content Wrapper Start -->
     <div id="content" class="main-content-wrapper">
