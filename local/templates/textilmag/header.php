@@ -6,6 +6,7 @@ use Bitrix\Main\Context;
 //CSS Files
 Asset::getInstance()->addCss(SITE_TEMPLATE_PATH . '/css/bootstrap.min.css');
 Asset::getInstance()->addCss(SITE_TEMPLATE_PATH . '/css/font-awesome.min.css');
+Asset::getInstance()->addCss(SITE_TEMPLATE_PATH . '/css/jquery.fancybox.min.css');
 Asset::getInstance()->addCss(SITE_TEMPLATE_PATH . '/css/dl-icon.css');
 Asset::getInstance()->addCss(SITE_TEMPLATE_PATH . '/css/main.css');
 Asset::getInstance()->addCss(SITE_TEMPLATE_PATH . '/css/styles.css');
@@ -13,6 +14,7 @@ Asset::getInstance()->addCss(SITE_TEMPLATE_PATH . '/css/styles.css');
 //JS Files
 Asset::getInstance()->addJs(SITE_TEMPLATE_PATH . '/js/jquery-3.4.1.min.js');
 Asset::getInstance()->addJs(SITE_TEMPLATE_PATH . '/js/bootstrap.min.js');
+Asset::getInstance()->addJs(SITE_TEMPLATE_PATH . '/js/jquery.fancybox.min.js');
 Asset::getInstance()->addJs(SITE_TEMPLATE_PATH . '/js/scripts.js');
 
 ?>
@@ -85,18 +87,34 @@ Asset::getInstance()->addJs(SITE_TEMPLATE_PATH . '/js/scripts.js');
 
                     <div class="col-lg-3 col-md-9 col-8 order-2 order-lg-3">
                         <div class="header-middle-right">
-                            <div class="searchform-wrapper d-none d-lg-block">
-                                <form action="#" class="searchform searchform-2">
-                                    <input type="text" class="searchform__input" id="search2" name="search"
-                                           placeholder="Search Here...">
-                                    <button type="submit" class="searchform__submit">
-                                        <i class="dl-icon-search1"></i>
-                                    </button>
-                                </form>
-                            </div>
+                            <?$APPLICATION->IncludeComponent(
+                                "bitrix:search.title",
+                                ".default",
+                                array(
+                                    "COMPONENT_TEMPLATE" => ".default",
+                                    "NUM_CATEGORIES" => "1",
+                                    "TOP_COUNT" => "10",
+                                    "ORDER" => "date",
+                                    "USE_LANGUAGE_GUESS" => "Y",
+                                    "CHECK_DATES" => "N",
+                                    "SHOW_OTHERS" => "N",
+                                    "PAGE" => "#SITE_DIR#search/index.php",
+                                    "SHOW_INPUT" => "Y",
+                                    "INPUT_ID" => "title-search-input",
+                                    "CONTAINER_ID" => "title-search",
+                                    "CATEGORY_0_TITLE" => "Продукция",
+                                    "CATEGORY_0" => array(
+                                        0 => "iblock_products",
+                                    ),
+                                    "CATEGORY_0_iblock_products" => array(
+                                        0 => "2",
+                                    )
+                                ),
+                                false
+                            );?>
                             <ul class="header-toolbar text-right">
                                 <li class="header-toolbar__item">
-                                    <a href="#miniCart" class="mini-cart-btn toolbar-btn">
+                                    <a href="/cart/" class="mini-cart-btn toolbar-btn">
                                         <i class="dl-icon-cart4"></i>
                                         <sup class="mini-cart-count">2</sup>
                                     </a>
