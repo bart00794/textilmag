@@ -23,7 +23,7 @@ $APPLICATION->SetTitle("Купить ивановский текстиль оптом от производителя \"Текс
                             "USE_FILTER" => "N",
                             "USE_COMPARE" => "N",
                             "SHOW_TOP_ELEMENTS" => "N",
-                            "SECTION_COUNT_ELEMENTS" => "Y",
+                            "SECTION_COUNT_ELEMENTS" => "N",
                             "SECTION_TOP_DEPTH" => "2",
                             "PAGE_ELEMENT_COUNT" => "12",
                             "LINE_ELEMENT_COUNT" => "1",

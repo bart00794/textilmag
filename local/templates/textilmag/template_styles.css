@@ -1,0 +1,23 @@
+a:hover, .header-toolbar__item:hover > a, .user-info-menu li a:hover, .footer-widget .widget-menu a:hover, .footer a:hover, .btn-close:hover i, .comment-author a:hover, .form .forgot-pass, .newsletter-form--2 .newsletter-form__submit:hover, .cart-form__btn:hover, .custom-close:hover i, .side-navigation-inner .widget a:hover, .sidenav-menu li a:hover, .blog-entry-meta a, .blog-title a:hover, .blog-footer-meta a:hover, .post-entry-meta a, .post-title a:hover, .product-title a:hover, .product-summary .product-extra a:hover, .ratings i.rated, .product-gallery__thumb .slick-btn:hover, .product-gallery__actions a:hover i, .product-gallery__actions button:hover i, .variation-form .swatch-wrapper:hover, .social.body-color .social__link:hover, .product-widget__list li a:hover, .contact-info a:hover, .blog-widget .menu li a:hover, .team-member__designation, .dropdown-item:hover, .insta-content-header h2, .message-box a:hover, .list-with-icon li i {
+    color: #e64d3a;
+}
+
+.ai-preloader .ai-child {
+    color: #e64d3a;
+}
+
+.main-navigation .mainmenu--centered {
+    text-align: right;
+}
+
+.header:not(.header-transparent) .main-navigation .mainmenu__item.active > a {
+    color: #e64d3a;
+}
+
+.header:not(.header-transparent) .main-navigation .mainmenu__link > span.mm-text:after {
+    background-color: #e64d3a;
+}
+
+.pagination > li > a, .pagination > li > span {
+    color: inherit;
+}

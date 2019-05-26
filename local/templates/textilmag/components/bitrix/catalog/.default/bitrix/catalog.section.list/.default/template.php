@@ -28,8 +28,8 @@ $arSectionDeleteParams = array("CONFIRM" => GetMessage('CT_BCSL_ELEMENT_DELETE_C
                             <figure class="product-image">
                                 <div class="product-image--holder">
                                     <a href="<?=$arSection['SECTION_PAGE_URL'];?>">
-                                        <img src="<?=$arSection["PICTURE"]["src"];?>" alt="Product Image" class="primary-image">
-                                        <img src="<?=$arSection["PICTURE"]["src"];?>" alt="Product Image" class="secondary-image">
+                                        <img src="<?=$arSection["PICTURE"]["src"];?>" alt="<?=$arSection['NAME'];?>" class="primary-image">
+                                        <img src="<?=$arSection["PICTURE"]["src"];?>" alt="<?=$arSection['NAME'];?>" class="secondary-image">
                                     </a>
                                 </div>
                             </figure>
