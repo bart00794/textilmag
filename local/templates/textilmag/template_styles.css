@@ -29,3 +29,13 @@ a:hover, .header-toolbar__item:hover > a, .user-info-menu li a:hover, .footer-wi
 .breadcrumb-area .breadcrumb li a {
     z-index: 1;
 }
+
+/*.prouduct-categories li>ul {*/
+/*    display: none;*/
+/*}*/
+.product-categories li>a + ul{
+    margin-top: 10px;
+}
+.product-categories li>ul {
+    margin-left: 35px;
+}

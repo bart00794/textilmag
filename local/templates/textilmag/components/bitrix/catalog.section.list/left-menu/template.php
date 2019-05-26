@@ -22,7 +22,7 @@ $arSectionDeleteParams = array("CONFIRM" => GetMessage('CT_BCSL_ELEMENT_DELETE_C
     <?
     if (0 < $arResult["SECTIONS_COUNT"]) {
         ?>
-        <ul class="prouduct-categories product-widget__list <? echo $arCurView['LIST']; ?>">
+        <ul class="product-categories product-widget__list <? echo $arCurView['LIST']; ?>">
             <?
             $intCurrentDepth = 1;
             $boolFirst = true;
