@@ -18,7 +18,7 @@ Loc::loadMessages(__FILE__);
                     <div class="product-inner">
                         <figure class="product-image">
                             <div class="product-image--holder">
-                                <a href="product-details.html">
+                                <a href="<?=$arElement['DETAIL_PAGE_URL'];?>">
                                     <img src="<?=$arElement['PICTURE']['SRC'];?>" alt="Product Image" class="primary-image">
                                     <img src="<?=$arElement['PICTURE']['SRC'];?>" alt="Product Image" class="secondary-image">
                                 </a>
@@ -26,7 +26,7 @@ Loc::loadMessages(__FILE__);
                         </figure>
                         <div class="product-info text-center">
                             <h3 class="product-title">
-                                <a href="product-details.html"><?=$arElement['NAME'];?></a>
+                                <a href="<?=$arElement['DETAIL_PAGE_URL'];?>"><?=$arElement['NAME'];?></a>
                             </h3>
                             <span class="product-price-wrapper">
                                 <span class="money"><?=$arElement['DISPLAY_PRICE'];?>  <?=Loc::getMessage("SERGAR_CATALOG_TEMPLATE_SECTION_POSTFIX_PRICE");?></span>

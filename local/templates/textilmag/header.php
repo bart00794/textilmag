@@ -25,7 +25,7 @@ Asset::getInstance()->addJs(SITE_TEMPLATE_PATH . '/js/scripts.js');
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="meta description">
-    <title><?=$APPLICATION->ShowTitle();?></title>
+    <title><?= $APPLICATION->ShowTitle(); ?></title>
     <link rel="shortcut icon" href="<?= SITE_TEMPLATE_PATH; ?>/img/favicon.ico" type="image/x-icon">
     <link rel="apple-touch-icon" href="<?= SITE_TEMPLATE_PATH; ?>/img/icon.png">
 
@@ -53,9 +53,9 @@ Asset::getInstance()->addJs(SITE_TEMPLATE_PATH . '/js/scripts.js');
                         <div class="header-left d-flex">
                             <!-- Logo Start Here -->
                             <a href="/" class="logo-box">
-<!--                                <figure class="logo--normal">-->
-                                    <img src="<?= SITE_TEMPLATE_PATH; ?>/img/logo/logo.png" alt="Logo" class="img-fluid"/>
-<!--                                </figure>-->
+                                <!--                                <figure class="logo--normal">-->
+                                <img src="<?= SITE_TEMPLATE_PATH; ?>/img/logo/logo.png" alt="Logo" class="img-fluid"/>
+                                <!--                                </figure>-->
                             </a>
                         </div>
                     </div>
@@ -87,43 +87,14 @@ Asset::getInstance()->addJs(SITE_TEMPLATE_PATH . '/js/scripts.js');
                         <div class="header-middle-right">
                             <div class="searchform-wrapper d-none d-lg-block">
                                 <form action="#" class="searchform searchform-2">
-                                    <input type="text" class="searchform__input" id="search2" name="search" placeholder="Search Here...">
+                                    <input type="text" class="searchform__input" id="search2" name="search"
+                                           placeholder="Search Here...">
                                     <button type="submit" class="searchform__submit">
                                         <i class="dl-icon-search1"></i>
                                     </button>
                                 </form>
                             </div>
                             <ul class="header-toolbar text-right">
-                                <li class="header-toolbar__item d-none d-lg-block">
-                                    <a href="#sideNav" class="toolbar-btn">
-                                        <i class="dl-icon-menu2"></i>
-                                    </a>
-                                </li>
-                                <li class="header-toolbar__item user-info-menu-btn">
-                                    <a href="#">
-                                        <i class="fa fa-user-circle-o"></i>
-                                    </a>
-                                    <ul class="user-info-menu">
-                                        <li>
-                                            <a href="my-account.html">My Account</a>
-                                        </li>
-                                        <li>
-                                            <a href="cart.html">Shopping Cart</a>
-                                        </li>
-                                        <li>
-                                            <a href="checkout.html">Check Out</a>
-                                        </li>
-                                        <li>
-                                            <a href="wishlist.html">Wishlist</a>
-                                        </li>
-                                        <li>
-                                            <a href="order-tracking.html">Order tracking</a>
-                                        </li>
-                                        <li>
-                                            <a href="compare.html">compare</a>
-                                        </li>
-                                    </ul>
-                                </li>
                                 <li class="header-toolbar__item">
                                     <a href="#miniCart" class="mini-cart-btn toolbar-btn">
                                         <i class="dl-icon-cart4"></i>
@@ -606,21 +577,27 @@ Asset::getInstance()->addJs(SITE_TEMPLATE_PATH . '/js/scripts.js');
     </header>
     <?
     $request = Context::getCurrent()->getRequest();
-    if(!($request->getRequestedPage() == "/index.php")){?>
+    if (!($request->getRequestedPage() == "/index.php")) {
+        ?>
         <!-- Mobile Header area End -->
         <div class="breadcrumb-area bg--white-6 pt--10 pb--10">
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-12 text-center">
-                        <h1 class="page-title"><?=$APPLICATION->ShowTitle(false);?></h1>
-                        <ul class="breadcrumb justify-content-center">
-                            <li><a href="index.html">Home</a></li>
-                            <li class="current"><span>Shop Pages</span></li>
-                        </ul>
+                        <h1 class="page-title"><?= $APPLICATION->ShowTitle(false); ?></h1>
+                        <? $APPLICATION->IncludeComponent(
+                            "bitrix:breadcrumb",
+                            "",
+                            Array(
+                                "START_FROM" => "0",
+                                "PATH" => "",
+                                "SITE_ID" => "-"
+                            )
+                        ); ?>
                     </div>
                 </div>
             </div>
         </div>
-    <?}?>
+    <? } ?>
     <!-- Main Content Wrapper Start -->
     <div id="content" class="main-content-wrapper">

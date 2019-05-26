@@ -16976,26 +16976,6 @@ a, button, img, input, span, .main-navigation .mainmenu__item.menu-item-has-chil
       font-size: 3rem;
       letter-spacing: 0px; } }
 
-.breadcrumb-area .breadcrumb {
-  margin-bottom: 0;
-  background-color: transparent;
-  padding: 0; }
-  .breadcrumb-area .breadcrumb li {
-    display: inline-block; }
-    .breadcrumb-area .breadcrumb li:not(:last-child) {
-      padding-right: 1rem;
-      margin-right: .5rem; }
-      .breadcrumb-area .breadcrumb li:not(:last-child):after {
-        content: '/';
-        right: 0;
-        top: 4px;
-        font-size: 10px; }
-    .breadcrumb-area .breadcrumb li a, .breadcrumb-area .breadcrumb li span {
-      font-size: 1.1rem;
-      text-transform: uppercase; }
-    .breadcrumb-area .breadcrumb li a {
-      z-index: 1; }
-
 .breadcrumb-area.breadcrumb-bg-1:after {
   background-image: url(../img/banner/leaf.png);
   background-position: 75% bottom;

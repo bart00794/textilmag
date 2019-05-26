@@ -21,3 +21,11 @@ a:hover, .header-toolbar__item:hover > a, .user-info-menu li a:hover, .footer-wi
 .pagination > li > a, .pagination > li > span {
     color: inherit;
 }
+
+.breadcrumb {
+    background-color: inherit;
+}
+
+.breadcrumb-area .breadcrumb li a {
+    z-index: 1;
+}

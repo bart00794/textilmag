@@ -1,80 +1,69 @@
-<?if(!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED!==true)die();
-/** @var array $arParams */
-/** @var array $arResult */
-/** @global CMain $APPLICATION */
-/** @global CUser $USER */
-/** @global CDatabase $DB */
-/** @var CBitrixComponentTemplate $this */
-/** @var string $templateName */
-/** @var string $templateFile */
-/** @var string $templateFolder */
-/** @var string $componentPath */
-/** @var CBitrixComponent $component */
-use Bitrix\Main\Loader;
-use Bitrix\Main\ModuleManager;
+<?if(!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED!==true)die();?>
+<?$APPLICATION->IncludeComponent(
+    "bitrix:catalog.section.list",
+    "",
+    Array(
+        "IBLOCK_TYPE" => $arParams["IBLOCK_TYPE"],
+        "IBLOCK_ID" => $arParams["IBLOCK_ID"],
+        "SECTION_ID" => $arResult["VARIABLES"]["SECTION_ID"],
+        "SECTION_CODE" => $arResult["VARIABLES"]["SECTION_CODE"],
+        "DISPLAY_PANEL" => "N",
+        "CACHE_TYPE" => $arParams["CACHE_TYPE"],
+        "CACHE_TIME" => $arParams["CACHE_TIME"],
+        "CACHE_GROUPS" => $arParams["CACHE_GROUPS"],
 
-$this->setFrameMode(true);
-$this->addExternalCss("/bitrix/css/main/bootstrap.css");
+        "SECTION_URL" => $arResult["FOLDER"].$arResult["URL_TEMPLATES"]["section"],
+    ),
+    $component
+);?>
+<?$APPLICATION->IncludeComponent(
+    "bitrix:catalog.section",
+    "",
+    Array(
+        "IBLOCK_TYPE" => $arParams["IBLOCK_TYPE"],
+        "IBLOCK_ID" => $arParams["IBLOCK_ID"],
+        "ELEMENT_SORT_FIELD" => $arParams["ELEMENT_SORT_FIELD"],
+        "ELEMENT_SORT_ORDER" => $arParams["ELEMENT_SORT_ORDER"],
+        "PROPERTY_CODE" => $arParams["LIST_PROPERTY_CODE"],
+        "META_KEYWORDS" => $arParams["LIST_META_KEYWORDS"],
+        "META_DESCRIPTION" => $arParams["LIST_META_DESCRIPTION"],
+        "BROWSER_TITLE" => $arParams["LIST_BROWSER_TITLE"],
+        "INCLUDE_SUBSECTIONS" => $arParams["INCLUDE_SUBSECTIONS"],
+        "BASKET_URL" => $arParams["BASKET_URL"],
+        "ACTION_VARIABLE" => $arParams["ACTION_VARIABLE"],
+        "PRODUCT_ID_VARIABLE" => $arParams["PRODUCT_ID_VARIABLE"],
+        "SECTION_ID_VARIABLE" => $arParams["SECTION_ID_VARIABLE"],
+        "FILTER_NAME" => $arParams["FILTER_NAME"],
+        "DISPLAY_PANEL" => $arParams["DISPLAY_PANEL"],
+        "CACHE_TYPE" => $arParams["CACHE_TYPE"],
+        "CACHE_TIME" => $arParams["CACHE_TIME"],
+        "CACHE_FILTER" => $arParams["CACHE_FILTER"],
+        "CACHE_GROUPS" => $arParams["CACHE_GROUPS"],
+        "SET_TITLE" => $arParams["SET_TITLE"],
+        "SET_STATUS_404" => $arParams["SET_STATUS_404"],
+        "DISPLAY_COMPARE" => $arParams["USE_COMPARE"],
+        "PAGE_ELEMENT_COUNT" => $arParams["PAGE_ELEMENT_COUNT"],
+        "LINE_ELEMENT_COUNT" => $arParams["LINE_ELEMENT_COUNT"],
+        "PRICE_CODE" => $arParams["PRICE_CODE"],
+        "USE_PRICE_COUNT" => $arParams["USE_PRICE_COUNT"],
+        "SHOW_PRICE_COUNT" => $arParams["SHOW_PRICE_COUNT"],
 
-if (!isset($arParams['FILTER_VIEW_MODE']) || (string)$arParams['FILTER_VIEW_MODE'] == '')
-	$arParams['FILTER_VIEW_MODE'] = 'VERTICAL';
-$arParams['USE_FILTER'] = (isset($arParams['USE_FILTER']) && $arParams['USE_FILTER'] == 'Y' ? 'Y' : 'N');
+        "PRICE_VAT_INCLUDE" => $arParams["PRICE_VAT_INCLUDE"],
 
-$isVerticalFilter = ('Y' == $arParams['USE_FILTER'] && $arParams["FILTER_VIEW_MODE"] == "VERTICAL");
-$isSidebar = ($arParams["SIDEBAR_SECTION_SHOW"] == "Y" && isset($arParams["SIDEBAR_PATH"]) && !empty($arParams["SIDEBAR_PATH"]));
-$isFilter = ($arParams['USE_FILTER'] == 'Y');
+        "DISPLAY_TOP_PAGER" => $arParams["DISPLAY_TOP_PAGER"],
+        "DISPLAY_BOTTOM_PAGER" => $arParams["DISPLAY_BOTTOM_PAGER"],
+        "PAGER_TITLE" => $arParams["PAGER_TITLE"],
+        "PAGER_SHOW_ALWAYS" => $arParams["PAGER_SHOW_ALWAYS"],
+        "PAGER_TEMPLATE" => $arParams["PAGER_TEMPLATE"],
+        "PAGER_DESC_NUMBERING" => $arParams["PAGER_DESC_NUMBERING"],
+        "PAGER_DESC_NUMBERING_CACHE_TIME" => $arParams["PAGER_DESC_NUMBERING_CACHE_TIME"],
+        "PAGER_SHOW_ALL" => $arParams["PAGER_SHOW_ALL"],
 
-if ($isFilter)
-{
-	$arFilter = array(
-		"IBLOCK_ID" => $arParams["IBLOCK_ID"],
-		"ACTIVE" => "Y",
-		"GLOBAL_ACTIVE" => "Y",
-	);
-	if (0 < intval($arResult["VARIABLES"]["SECTION_ID"]))
-		$arFilter["ID"] = $arResult["VARIABLES"]["SECTION_ID"];
-	elseif ('' != $arResult["VARIABLES"]["SECTION_CODE"])
-		$arFilter["=CODE"] = $arResult["VARIABLES"]["SECTION_CODE"];
-
-	$obCache = new CPHPCache();
-	if ($obCache->InitCache(36000, serialize($arFilter), "/iblock/catalog"))
-	{
-		$arCurSection = $obCache->GetVars();
-	}
-	elseif ($obCache->StartDataCache())
-	{
-		$arCurSection = array();
-		if (Loader::includeModule("iblock"))
-		{
-			$dbRes = CIBlockSection::GetList(array(), $arFilter, false, array("ID"));
-
-			if(defined("BX_COMP_MANAGED_CACHE"))
-			{
-				global $CACHE_MANAGER;
-				$CACHE_MANAGER->StartTagCache("/iblock/catalog");
-
-				if ($arCurSection = $dbRes->Fetch())
-					$CACHE_MANAGER->RegisterTag("iblock_id_".$arParams["IBLOCK_ID"]);
-
-				$CACHE_MANAGER->EndTagCache();
-			}
-			else
-			{
-				if(!$arCurSection = $dbRes->Fetch())
-					$arCurSection = array();
-			}
-		}
-		$obCache->EndDataCache($arCurSection);
-	}
-	if (!isset($arCurSection))
-		$arCurSection = array();
-}
+        "SECTION_ID" => $arResult["VARIABLES"]["SECTION_ID"],
+        "SECTION_CODE" => $arResult["VARIABLES"]["SECTION_CODE"],
+        "SECTION_URL" => $arResult["FOLDER"].$arResult["URL_TEMPLATES"]["section"],
+        "DETAIL_URL" => $arResult["FOLDER"].$arResult["URL_TEMPLATES"]["element"],
+    ),
+    $component
+);
 ?>
-<div class="row">
-<?
-if ($isVerticalFilter)
-	include($_SERVER["DOCUMENT_ROOT"]."/".$this->GetFolder()."/section_vertical.php");
-else
-	include($_SERVER["DOCUMENT_ROOT"]."/".$this->GetFolder()."/section_horizontal.php");
-?>
-</div>
