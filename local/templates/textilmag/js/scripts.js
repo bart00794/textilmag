@@ -47,24 +47,6 @@ $(function () {
         }
     }
 
-    function toolbarExpand(){
-        $('.toolbar-btn').on('click', function(e){
-            e.preventDefault();
-            e.stopPropagation();
-            let target = $(this).attr('href');
-            let prevTarget = $(this).parent().siblings().children('.toolbar-btn').attr('href');
-            $(target).addClass('open');
-            $(prevTarget).removeClass('open');
-            if(!$(this).is('.search-btn')){
-                $('.ai-global-overlay').addClass('overlay-open');
-            }
-            $('.main-navigation').removeClass('open-mobile-menu');
-            $('.dl-menu').removeClass('dl-menuopen');
-            $('.menu-btn').removeClass('open');
-        });
-    }
-
     $('.ai-preloader').removeClass("active");
     stickyHeader();
-    toolbarExpand();
 });
