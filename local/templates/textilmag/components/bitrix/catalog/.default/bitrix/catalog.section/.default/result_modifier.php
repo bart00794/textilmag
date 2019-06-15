@@ -20,7 +20,7 @@ foreach ($arResult['ITEMS'] as &$arItem)
 	$arFileTmp = CFile::ResizeImageGet(
         $arImage,
 		array("width" => 420, "height" => 540),
-		BX_RESIZE_IMAGE_EXACT,
+        BX_RESIZE_IMAGE_PROPORTIONAL,
 		true
 	);
     $arItem["PICTURE"] = [
