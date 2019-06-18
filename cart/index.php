@@ -8,7 +8,7 @@ $APPLICATION->SetTitle("Корзина");
 	"sergar:cart",
 	".default",
 	[
-		'EMAIL_TO'=> 's.smirnov@qsoft.ru',
+		'EMAIL_TO'=> 'textilmag@yandex.ru',
 		'EVENT_TYPE' => "BLACKBUTTERFLY_CONTACTS_SEND"
 	],
 	false
