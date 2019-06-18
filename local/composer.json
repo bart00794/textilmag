@@ -1,5 +1,11 @@
 {
     "require": {
-        "symfony/var-dumper": "^3.4"
+        "symfony/var-dumper": "^3.4",
+        "ext-json": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "Sergar\\": "php_interface/src"
+        }
     }
 }

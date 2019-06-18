@@ -87,7 +87,7 @@ Asset::getInstance()->addJs(SITE_TEMPLATE_PATH . '/js/scripts.js');
 
                     <div class="col-lg-3 col-md-9 col-8 order-2 order-lg-3">
                         <div class="header-middle-right">
-                            <?$APPLICATION->IncludeComponent(
+                            <? $APPLICATION->IncludeComponent(
                                 "bitrix:search.title",
                                 ".default",
                                 array(
@@ -111,12 +111,12 @@ Asset::getInstance()->addJs(SITE_TEMPLATE_PATH . '/js/scripts.js');
                                     )
                                 ),
                                 false
-                            );?>
+                            ); ?>
                             <ul class="header-toolbar text-right">
                                 <li class="header-toolbar__item">
                                     <a href="/cart/" class="mini-cart-btn toolbar-btn">
                                         <i class="dl-icon-cart4"></i>
-                                        <sup class="mini-cart-count">2</sup>
+                                        <sup class="mini-cart-count"><?=count($_SESSION['BASKET']);?></sup>
                                     </a>
                                 </li>
                                 <li class="header-toolbar__item d-lg-none">

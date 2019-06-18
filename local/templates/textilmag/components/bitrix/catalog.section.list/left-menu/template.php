@@ -47,8 +47,11 @@ $arSectionDeleteParams = array("CONFIRM" => GetMessage('CT_BCSL_ELEMENT_DELETE_C
 
             echo(!$boolFirst ? "\n" : ''), str_repeat("\t", $arSection['RELATIVE_DEPTH_LEVEL']);
             ?>
-            <li id="<?= $this->GetEditAreaId($arSection['ID']); ?>"><a
-                        href="<? echo $arSection["SECTION_PAGE_URL"]; ?>"><? echo $arSection["NAME"]; ?></a>
+            <li id="<?= $this->GetEditAreaId($arSection['ID']); ?>">
+                <a href="<? echo $arSection["SECTION_PAGE_URL"]; ?>">
+                    <?if($arSection['DEPTH_LEVEL'] != '1') echo str_repeat("- ",$arSection['DEPTH_LEVEL']-1);?>
+                    <? echo $arSection["NAME"]; ?>
+                </a>
                 <?
                 if ($arParams["COUNT_ELEMENTS"]) {
                     ?>

@@ -42,43 +42,44 @@ $arSkuOnePack = !is_null($arResult["PROPERTIES"]["SKU_SIZE"]["VALUE"]) ? $arResu
                             href="mailto:textilmag@yandex.ru">textilmag@yandex.ru</a>
                 </p>
             </div>
-            <div class="mb--20">
-                <form id="buyItem" action="#" method="POST">
-                    <?=bitrix_sessid_post()?>
-                    <input type="hidden" name="id_item" value="<?=$arResult['ID'];?>">
-                    <div class="container">
-                        <div class="row align-items-center">
-                            <div class="col-7"><h5>Размер</h5></div>
-                            <div class="col-2"><h5>Цена</h5></div>
-                            <div class="col-3"><h5>Количество</h5></div>
-                        </div>
-                        <? foreach ($arResult["PRICES"] as $arSKU) {?>
-                            <div class="row align-items-center mt--5 sku-block">
-                                <div class="col-7 sku-size">
-                                    <?= (!empty($arSKU['SIZE'])) ? $arSKU['SIZE'] : "не задан"; ?>
-                                </div>
-                                <div class="col-2 sku-price"><?= $arSKU['PRICE']; ?> руб.</div>
-                                <div class="col-3 sku-quantity">
+
+
+            <form action="#" class="form--action mb--30 mb-sm--20" id="buyItem">
+                <?=bitrix_sessid_post()?>
+                <input type="hidden" name="id_item" value="<?=$arResult['ID'];?>">
+                <div class="table-content table-responsive">
+                    <table class="table group-product-table">
+                        <? foreach ($arResult["PRICES"] as $arSKU) { ?>
+                            <tr class="sku-block">
+                                <td class="product-quantity">
                                     <div class="quantity">
-                                        <input type="number" class="quantity-input" name="sku_<?=$arSKU['ID'];?>" id="qty" value="0"
-                                               min="0" data-quantity="<?= $arSkuOnePack; ?>">
+                                        <input type="number" class="quantity-input" name="sku_<?= $arSKU['ID']; ?>"
+                                               id="qty" value="0" min="0" data-quantity="<?= $arSkuOnePack; ?>">
                                         <div class="dec qtybutton">-</div>
                                         <div class="inc qtybutton">+</div>
                                     </div>
-                                </div>
-                            </div>
+                                </td>
+                                <td class="product-name">
+                                    <h3>
+                                        <a href="product-details.html"><?= (!empty($arSKU['SIZE'])) ? $arSKU['SIZE'] : "не задан"; ?></a>
+                                    </h3>
+                                </td>
+                                <td class="product-price sku-price">
+                                    <div class="product-price-wrapper">
+                                        <span class="money"><?= $arSKU['PRICE']; ?> руб.</span>
+                                    </div>
+                                </td>
+                            </tr>
                         <? } ?>
-                        <div class="row align-items-center mt--15">
-                            <div class="col-7"><strong>Итого: </strong></div>
-                            <div class="col-2"><strong><span id="summ_buy">0</span> руб.</strong></div>
-                            <div class="col-3"><input type="submit" id="buy_btn" class="btn btn-light" value="Купить">
-                            </div>
-                        </div>
-                    </div>
-                </form>
-                <div id="result"></div>
-            </div>
-
+                    </table>
+                </div>
+                <div class="product-action flex-row align-items-center mt--40">
+                    <button type="submit" class="btn btn-style-1 btn-large add-to-cart">
+                        Добавить в корзину
+                    </button>
+                    <span><span id="summ_buy">00.00</span> руб.</span>
+                </div>
+            </form>
 
             <p class="alert alert-warning ">Обращаем Ваше внимание на то, что вся представленная на сайте продукция, ее
                 цветовые и другие
@@ -87,6 +88,23 @@ $arSkuOnePack = !is_null($arResult["PROPERTIES"]["SKU_SIZE"]["VALUE"]) ? $arResu
                 предварительного уведомления. Для получения подробной информации или размещения заказов обращайтесь к
                 менеджерам компании по телефонам: +7(905)109-31-15, +7(920)355-40-95 или пишите на электронную почту: <a
                         href="mailto:textilmag@yandex.ru">textilmag@yandex.ru</a></p>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="modalBuyPopup" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLongTitle">Товар добавлен в корзину</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Продолжить покупки</button>
+                <a type="button" class="btn btn-primary" href="/cart/">Перейти в корзину</a>
+            </div>
         </div>
     </div>
 </div>

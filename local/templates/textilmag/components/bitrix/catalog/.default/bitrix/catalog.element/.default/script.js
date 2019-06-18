@@ -27,25 +27,13 @@ $(function () {
             success: function (data) {
                 if(data.status)
                 {
+                    $('#modalBuyPopup').modal('show');
                     $("#result").html(JSON.stringify(data));
                     console.log(data);
                 }
             },
             dataType: 'json'
         });
-
-        // BX.ajax.runComponentAction('sergar:cart',
-        //     'addItem', {
-        //         mode: 'class',
-        //         data: {post: formData},
-        //     })
-        //     .then(function(response) {
-        //         $("#query").text(JSON.stringify(formData));
-        //         $("#result").text(JSON.stringify(response));
-        //         // if (response.status === 'success') {
-        //         //     // Если форма успешно отправилась
-        //         // }
-        //     });
     });
 });
 function summbuy(){
