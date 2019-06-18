@@ -7,6 +7,7 @@ use Bitrix\Main\Context;
 Asset::getInstance()->addCss(SITE_TEMPLATE_PATH . '/css/bootstrap.min.css');
 Asset::getInstance()->addCss(SITE_TEMPLATE_PATH . '/css/font-awesome.min.css');
 Asset::getInstance()->addCss(SITE_TEMPLATE_PATH . '/css/jquery.fancybox.min.css');
+Asset::getInstance()->addCss(SITE_TEMPLATE_PATH . '/css/owl.carousel.min.css');
 Asset::getInstance()->addCss(SITE_TEMPLATE_PATH . '/css/dl-icon.css');
 Asset::getInstance()->addCss(SITE_TEMPLATE_PATH . '/css/main.css');
 Asset::getInstance()->addCss(SITE_TEMPLATE_PATH . '/css/styles.css');
@@ -15,6 +16,7 @@ Asset::getInstance()->addCss(SITE_TEMPLATE_PATH . '/css/styles.css');
 Asset::getInstance()->addJs(SITE_TEMPLATE_PATH . '/js/jquery-3.4.1.min.js');
 Asset::getInstance()->addJs(SITE_TEMPLATE_PATH . '/js/bootstrap.min.js');
 Asset::getInstance()->addJs(SITE_TEMPLATE_PATH . '/js/jquery.fancybox.min.js');
+Asset::getInstance()->addJs(SITE_TEMPLATE_PATH . '/js/owl.carousel.min.js');
 Asset::getInstance()->addJs(SITE_TEMPLATE_PATH . '/js/scripts.js');
 
 ?>
