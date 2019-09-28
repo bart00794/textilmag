@@ -22,13 +22,14 @@ $(function () {
     });
     $(".product-remove a").click(function (e) {
         e.preventDefault();
-        $.get($(this).attr('href'));
+        $.get($(this).attr('href'),function () {
+            location.reload();
+        });
     });
     $("#updateCart").click(function (e) {
         e.preventDefault();
         var formData = new FormData();
         $(this).closest('.row').find('table input').each(function (key,input) {
-            console.log(input.name);
             formData.append(input.name,input.value);
         });
         formData.append('update','Y');

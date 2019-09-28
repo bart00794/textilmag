@@ -106,7 +106,7 @@ class SergarCartComponent extends CBitrixComponent
         $SkuId = (int)$request->getQuery('SKU_ID');
 
         $basket = &$_SESSION['BASKET'];
-        if (count($basket[$id][$SkuId]) > 1)
+        if (count($basket[$id][$SkuId]) >= 1)
             unset($basket[$id][$SkuId]);
         else
             unset($basket[$id]);
