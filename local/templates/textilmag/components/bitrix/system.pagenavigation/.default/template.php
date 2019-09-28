@@ -161,5 +161,12 @@ $strNavQueryStringFull = ($arResult["NavQueryString"] != "" ? "?" . $arResult["N
                 <li><span class="next page-number"><i class="fa fa-angle-double-right"></i></span></li>
             <? endif ?>
         <? endif ?>
+        <?if ($arResult["bShowAll"]):?>
+            <?if ($arResult["NavShowAll"]):?>
+                <li><a href="<?=$arResult["sUrlPath"]?>?<?=$strNavQueryString?>SHOWALL_<?=$arResult["NavNum"]?>=0" class="page-number"><?=GetMessage("nav_paged")?></a></li>
+            <?else:?>
+                <li><a href="<?=$arResult["sUrlPath"]?>?<?=$strNavQueryString?>SHOWALL_<?=$arResult["NavNum"]?>=1" class="page-number"><?=GetMessage("nav_all")?></a></li>
+            <?endif?>
+        <?endif?>
     </ul>
 </nav>
