@@ -19,12 +19,12 @@
         <div class="row mb--15 mb-sm--20 text-center">
             <div class="col-md-4">
                 <div>
-                    <span class="information_dostav"><a href="/kak-zakazat/">Как заказать текстиль</a></span>
+                    <span class="information_dostav"><a href="/kak-zakazat/">РљР°Рє Р·Р°РєР°Р·Р°С‚СЊ С‚РµРєСЃС‚РёР»СЊ</a></span>
                 </div>
             </div>
             <div class="col-md-4">
                 <div>
-                    <span class="market_info"><a href="/prays/">Прайс-лист на продукцию</a></span>
+                    <span class="market_info"><a href="/prays/">РџСЂР°Р№СЃ-Р»РёСЃС‚ РЅР° РїСЂРѕРґСѓРєС†РёСЋ</a></span>
                 </div>
             </div>
             <div class="col-md-4">

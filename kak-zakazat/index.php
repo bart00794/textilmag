@@ -1,101 +1,101 @@
 <?
 require($_SERVER["DOCUMENT_ROOT"]."/bitrix/header.php");
-$APPLICATION->SetPageProperty("keywords", "купить текстиль оптом от производителя иваново");
-$APPLICATION->SetPageProperty("description", "Выгодные условия сотрудничества для всех наших клиентов. Телефон: +7 905 109 31 15");
-$APPLICATION->SetTitle("Как заказать текстиль оптом в компании \"ТекстильМаг\"");
+$APPLICATION->SetPageProperty("keywords", "РєСѓРїРёС‚СЊ С‚РµРєСЃС‚РёР»СЊ РѕРїС‚РѕРј РѕС‚ РїСЂРѕРёР·РІРѕРґРёС‚РµР»СЏ РёРІР°РЅРѕРІРѕ");
+$APPLICATION->SetPageProperty("description", "Р’С‹РіРѕРґРЅС‹Рµ СѓСЃР»РѕРІРёСЏ СЃРѕС‚СЂСѓРґРЅРёС‡РµСЃС‚РІР° РґР»СЏ РІСЃРµС… РЅР°С€РёС… РєР»РёРµРЅС‚РѕРІ. РўРµР»РµС„РѕРЅ: +7 905 109 31 15");
+$APPLICATION->SetTitle("РљР°Рє Р·Р°РєР°Р·Р°С‚СЊ С‚РµРєСЃС‚РёР»СЊ РѕРїС‚РѕРј РІ РєРѕРјРїР°РЅРёРё \"РўРµРєСЃС‚РёР»СЊРњР°Рі\"");
 ?>
     <div class="container">
         <div class="row">
             <div class="col-lg-12">
-                <h1 style="text-align: justify;"> Условия заказа и порядок расчета</h1>
+                <h1 style="text-align: justify;"> РЈСЃР»РѕРІРёСЏ Р·Р°РєР°Р·Р° Рё РїРѕСЂСЏРґРѕРє СЂР°СЃС‡РµС‚Р°</h1>
 
-                <div style="text-align: justify;" class="alert alert-danger"><font size="4"><b><u>Чтобы сделать заказ, скачайте бланк заказа, заполните его, пользуясь прайс-листом, либо составьте ваш заказ  в произвольной форме и отправьте на почту <a href="mailto:textilmag@yandex.ru" >textilmag@yandex.ru</a></u></b></font></div>
-
-                <div style="text-align: justify;">
-                    <br />
-                </div>
-
-                <div style="text-align: justify;"><a href="/kak-zakazat/price.xlsx" >Скачать прайс</a></div>
-
-                <div style="text-align: justify;"><a href="/kak-zakazat/blank.xlsx" >Скачать бланк заказа</a>                              </div>
+                <div style="text-align: justify;" class="alert alert-danger"><font size="4"><b><u>Р§С‚РѕР±С‹ СЃРґРµР»Р°С‚СЊ Р·Р°РєР°Р·, СЃРєР°С‡Р°Р№С‚Рµ Р±Р»Р°РЅРє Р·Р°РєР°Р·Р°, Р·Р°РїРѕР»РЅРёС‚Рµ РµРіРѕ, РїРѕР»СЊР·СѓСЏСЃСЊ РїСЂР°Р№СЃ-Р»РёСЃС‚РѕРј, Р»РёР±Рѕ СЃРѕСЃС‚Р°РІСЊС‚Рµ РІР°С€ Р·Р°РєР°Р· В РІ РїСЂРѕРёР·РІРѕР»СЊРЅРѕР№ С„РѕСЂРјРµ Рё РѕС‚РїСЂР°РІСЊС‚Рµ РЅР° РїРѕС‡С‚Сѓ <a href="mailto:textilmag@yandex.ru" >textilmag@yandex.ru</a></u></b></font></div>
 
                 <div style="text-align: justify;">
                     <br />
                 </div>
 
-                <div style="text-align: justify;"><b><font color="#ff0000">Минимальный объем заказа 5 тысяч рублей.</font></b></div>
+                <div style="text-align: justify;"><a href="/kak-zakazat/price.xlsx" >РЎРєР°С‡Р°С‚СЊ РїСЂР°Р№СЃ</a></div>
+
+                <div style="text-align: justify;"><a href="/kak-zakazat/blank.xlsx" >РЎРєР°С‡Р°С‚СЊ Р±Р»Р°РЅРє Р·Р°РєР°Р·Р°</a>В  В  В  В  В  В  В  В  В  В  В  В  В  В  В В </div>
 
                 <div style="text-align: justify;">
                     <br />
                 </div>
 
-                <div style="text-align: justify;">Оплата производится наличными или переводом на расчетный счет. Реквизиты ниже. Отправка товара осуществляется только после получения денег.</div>
+                <div style="text-align: justify;"><b><font color="#ff0000">РњРёРЅРёРјР°Р»СЊРЅС‹Р№ РѕР±СЉРµРј Р·Р°РєР°Р·Р° 5 С‚С‹СЃСЏС‡ СЂСѓР±Р»РµР№.</font></b></div>
 
                 <div style="text-align: justify;">
                     <br />
                 </div>
 
-                <div style="text-align: justify;"><b>Срок выполнения заказа:</b> от 1 до 7 дней. Зависит от наличия товара на складе.</div>
+                <div style="text-align: justify;">РћРїР»Р°С‚Р° РїСЂРѕРёР·РІРѕРґРёС‚СЃСЏ РЅР°Р»РёС‡РЅС‹РјРё РёР»Рё РїРµСЂРµРІРѕРґРѕРј РЅР° СЂР°СЃС‡РµС‚РЅС‹Р№ СЃС‡РµС‚. Р РµРєРІРёР·РёС‚С‹ РЅРёР¶Рµ. РћС‚РїСЂР°РІРєР° С‚РѕРІР°СЂР° РѕСЃСѓС‰РµСЃС‚РІР»СЏРµС‚СЃСЏ С‚РѕР»СЊРєРѕ РїРѕСЃР»Рµ РїРѕР»СѓС‡РµРЅРёСЏ РґРµРЅРµРі.</div>
+
+                <div style="text-align: justify;">
+                    <br />
+                </div>
+
+                <div style="text-align: justify;"><b>РЎСЂРѕРє РІС‹РїРѕР»РЅРµРЅРёСЏ Р·Р°РєР°Р·Р°:</b> РѕС‚ 1 РґРѕ 7 РґРЅРµР№. Р—Р°РІРёСЃРёС‚ РѕС‚ РЅР°Р»РёС‡РёСЏ С‚РѕРІР°СЂР° РЅР° СЃРєР»Р°РґРµ.</div>
 
                 <div style="text-align: justify;"> <b>
                         <br />
                     </b></div>
 
-                <div style="text-align: justify;"><b>Доставка по России: </b>Желдорэкспедиция, Автотрейдинг, Деловые Линии, КАРГО, ПЭК, Транс-Вектор, КИТ, Энергия</div>
+                <div style="text-align: justify;"><b>Р”РѕСЃС‚Р°РІРєР° РїРѕ Р РѕСЃСЃРёРё: </b>Р–РµР»РґРѕСЂСЌРєСЃРїРµРґРёС†РёСЏ, РђРІС‚РѕС‚СЂРµР№РґРёРЅРі, Р”РµР»РѕРІС‹Рµ Р›РёРЅРёРё, РљРђР Р“Рћ, РџР­Рљ, РўСЂР°РЅСЃ-Р’РµРєС‚РѕСЂ, РљРРў, Р­РЅРµСЂРіРёСЏ</div>
 
                 <div style="text-align: justify;">
                     <br />
                 </div>
 
-                <div style="text-align: justify;"><b>Для оформления документов и отправки груза необходимы данные:</b></div>
+                <div style="text-align: justify;"><b>Р”Р»СЏ РѕС„РѕСЂРјР»РµРЅРёСЏ РґРѕРєСѓРјРµРЅС‚РѕРІ Рё РѕС‚РїСЂР°РІРєРё РіСЂСѓР·Р° РЅРµРѕР±С…РѕРґРёРјС‹ РґР°РЅРЅС‹Рµ:</b></div>
 
                 <div>
                     <ul>
-                        <li style="text-align: justify;">полное название фирмы (ООО, ИП) или ФИО (для физических лиц);</li>
+                        <li style="text-align: justify;">РїРѕР»РЅРѕРµ РЅР°Р·РІР°РЅРёРµ С„РёСЂРјС‹ (РћРћРћ, РРџ) РёР»Рё Р¤РРћ (РґР»СЏ С„РёР·РёС‡РµСЃРєРёС… Р»РёС†);</li>
 
-                        <li style="text-align: justify;">юридический адрес;</li>
+                        <li style="text-align: justify;">СЋСЂРёРґРёС‡РµСЃРєРёР№ Р°РґСЂРµСЃ;</li>
 
-                        <li style="text-align: justify;">фактический адрес (индекс указывать <b>обязательно</b>), на который отправлять груз и документы;</li>
+                        <li style="text-align: justify;">С„Р°РєС‚РёС‡РµСЃРєРёР№ Р°РґСЂРµСЃ (РёРЅРґРµРєСЃ СѓРєР°Р·С‹РІР°С‚СЊ <b>РѕР±СЏР·Р°С‚РµР»СЊРЅРѕ</b>), РЅР° РєРѕС‚РѕСЂС‹Р№ РѕС‚РїСЂР°РІР»СЏС‚СЊ РіСЂСѓР· Рё РґРѕРєСѓРјРµРЅС‚С‹;</li>
 
-                        <li style="text-align: justify;">ИНН (свидетельство серия и номер) либо паспортные данные получателя (для физических лиц);</li>
+                        <li style="text-align: justify;">РРќРќ (СЃРІРёРґРµС‚РµР»СЊСЃС‚РІРѕ СЃРµСЂРёСЏ Рё РЅРѕРјРµСЂ) Р»РёР±Рѕ РїР°СЃРїРѕСЂС‚РЅС‹Рµ РґР°РЅРЅС‹Рµ РїРѕР»СѓС‡Р°С‚РµР»СЏ (РґР»СЏ С„РёР·РёС‡РµСЃРєРёС… Р»РёС†);</li>
 
-                        <li style="text-align: justify;">ОГРН (свидетельство серия и номер);</li>
+                        <li style="text-align: justify;">РћР“Р Рќ (СЃРІРёРґРµС‚РµР»СЊСЃС‚РІРѕ СЃРµСЂРёСЏ Рё РЅРѕРјРµСЂ);</li>
 
-                        <li style="text-align: justify;">банковские реквизиты;</li>
+                        <li style="text-align: justify;">Р±Р°РЅРєРѕРІСЃРєРёРµ СЂРµРєРІРёР·РёС‚С‹;</li>
 
-                        <li style="text-align: justify;">номер телефона для связи;</li>
+                        <li style="text-align: justify;">РЅРѕРјРµСЂ С‚РµР»РµС„РѕРЅР° РґР»СЏ СЃРІСЏР·Рё;</li>
 
-                        <li style="text-align: justify;">для ООО указывать ФИО директора;</li>
+                        <li style="text-align: justify;">РґР»СЏ РћРћРћ СѓРєР°Р·С‹РІР°С‚СЊ Р¤РРћ РґРёСЂРµРєС‚РѕСЂР°;</li>
 
-                        <li style="text-align: justify;"><b>обязательно</b> указывать название транспортной компании (ЖелДорЭкспедиция, Деловые Линии, ПЭК, КАРГО, Автотрейдинг, Транс-Вектор, Ратэк, КИТ, Энергия).</li>
+                        <li style="text-align: justify;"><b>РѕР±СЏР·Р°С‚РµР»СЊРЅРѕ</b> СѓРєР°Р·С‹РІР°С‚СЊ РЅР°Р·РІР°РЅРёРµ С‚СЂР°РЅСЃРїРѕСЂС‚РЅРѕР№ РєРѕРјРїР°РЅРёРё (Р–РµР»Р”РѕСЂР­РєСЃРїРµРґРёС†РёСЏ, Р”РµР»РѕРІС‹Рµ Р›РёРЅРёРё, РџР­Рљ, РљРђР Р“Рћ, РђРІС‚РѕС‚СЂРµР№РґРёРЅРі, РўСЂР°РЅСЃ-Р’РµРєС‚РѕСЂ, Р Р°С‚СЌРє, РљРРў, Р­РЅРµСЂРіРёСЏ).</li>
                     </ul>
                 </div>
 
-                <div style="text-align: justify;"><b>Реквизиты банка</b></div>
+                <div style="text-align: justify;"><b>Р РµРєРІРёР·РёС‚С‹ Р±Р°РЅРєР°</b></div>
 
-                <div style="text-align: justify;">ИНН 370253998865</div>
+                <div style="text-align: justify;">РРќРќ 370253998865</div>
 
-                <div style="text-align: justify;">КПП 0</div>
+                <div style="text-align: justify;">РљРџРџ 0</div>
 
-                <div style="text-align: justify;">ОГРН 304370214100130</div>
+                <div style="text-align: justify;">РћР“Р Рќ 304370214100130</div>
 
-                <div style="text-align: justify;">Р/сч 40802810400000000506</div>
+                <div style="text-align: justify;">Р /СЃС‡ 40802810400000000506</div>
 
-                <div style="text-align: justify;">БИК 042406701</div>
+                <div style="text-align: justify;">Р‘РРљ 042406701</div>
 
-                <div style="text-align: justify;">К/сч 30101810800000000701</div>
+                <div style="text-align: justify;">Рљ/СЃС‡ 30101810800000000701</div>
 
-                <div style="text-align: justify;">Банк ОАО КИБ &quot;Евроальянс&quot; г. Иваново</div>
+                <div style="text-align: justify;">Р‘Р°РЅРє РћРђРћ РљРР‘ &quot;Р•РІСЂРѕР°Р»СЊСЏРЅСЃ&quot; Рі. РРІР°РЅРѕРІРѕ</div>
 
                 <div style="text-align: justify;">
                     <br />
                 </div>
 
-                <div style="text-align: justify;"><b>Реквизиты карты</b></div>
+                <div style="text-align: justify;"><b>Р РµРєРІРёР·РёС‚С‹ РєР°СЂС‚С‹</b></div>
 
                 <div style="text-align: justify;">4276 1700 1017 9976</div>
 
-                <div style="text-align: justify;">действует до 07/19</div>
+                <div style="text-align: justify;">РґРµР№СЃС‚РІСѓРµС‚ РґРѕ 07/19</div>
             </div>
         </div>
     </div>

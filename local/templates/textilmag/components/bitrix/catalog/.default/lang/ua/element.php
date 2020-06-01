@@ -1,6 +1,6 @@
 <?
-$MESS["CATALOG_PERSONAL_RECOM"] = "Ïåðñîíàëüí³ ðåêîìåíäàö³¿";
-$MESS["CATALOG_POPULAR_IN_SECTION"] = "Ïîïóëÿðí³ â ðîçä³ë³";
-$MESS["CATALOG_VIEWED"] = "Ïåðåãëÿäàëè";
-$MESS["CATALOG_RECOMMENDED_BY_LINK"] = "Ç öèì òîâàðîì ðåêîìåíäóºìî";
+$MESS["CATALOG_PERSONAL_RECOM"] = "ÐŸÐµÑ€ÑÐ¾Ð½Ð°Ð»ÑŒÐ½Ñ– Ñ€ÐµÐºÐ¾Ð¼ÐµÐ½Ð´Ð°Ñ†Ñ–Ñ—";
+$MESS["CATALOG_POPULAR_IN_SECTION"] = "ÐŸÐ¾Ð¿ÑƒÐ»ÑÑ€Ð½Ñ– Ð² Ñ€Ð¾Ð·Ð´Ñ–Ð»Ñ–";
+$MESS["CATALOG_VIEWED"] = "ÐŸÐµÑ€ÐµÐ³Ð»ÑÐ´Ð°Ð»Ð¸";
+$MESS["CATALOG_RECOMMENDED_BY_LINK"] = "Ð— Ñ†Ð¸Ð¼ Ñ‚Ð¾Ð²Ð°Ñ€Ð¾Ð¼ Ñ€ÐµÐºÐ¾Ð¼ÐµÐ½Ð´ÑƒÑ”Ð¼Ð¾";
 ?>

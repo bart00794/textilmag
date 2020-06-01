@@ -1,8 +1,8 @@
 <?
 	/**
-	 * Ёкранирует элементы массива
-	 * @param {array} $array —ам массив.
-	 * @param {bool} $orig=false ¬озвращать ли оригинальные элементы с '~'.
+	 * РЃРєСЂР°РЅРёСЂСѓРµС‚ СЌР»РµРјРµРЅС‚С‹ РјР°СЃСЃРёРІР°
+	 * @param {array} $array вЂ”Р°Рј РјР°СЃСЃРёРІ.
+	 * @param {bool} $orig=false В¬РѕР·РІСЂР°С‰Р°С‚СЊ Р»Рё РѕСЂРёРіРёРЅР°Р»СЊРЅС‹Рµ СЌР»РµРјРµРЅС‚С‹ СЃ '~'.
 	 * @return {array}
 	 */
 	function escapeArray($array, $orig=false){
@@ -18,7 +18,7 @@
 		}
 		return $res;
 	}	
-	// если скрипт вызван не через AJAX
+	// РµСЃР»Рё СЃРєСЂРёРїС‚ РІС‹Р·РІР°РЅ РЅРµ С‡РµСЂРµР· AJAX
 	if($_SERVER['HTTP_X_REQUESTED_WITH'] != 'XMLHttpRequest'){
 		exit;
 	}
@@ -38,7 +38,7 @@
 				"IBLOCKS" => $_SESSION["CBKT_PARAMS"]["IBLOCKS"],
 			),
 			false);
-				//echo "<script>$('.loadBar').html('Пример Выполнение JavaScript');</script>";
+				//echo "<script>$('.loadBar').html('РџСЂРёРјРµСЂ Р’С‹РїРѕР»РЅРµРЅРёРµ JavaScript');</script>";
 
 	}
 	else{

@@ -53,7 +53,7 @@ class CBKcall{
 		);
 		if (!$ems_el = $ems->Fetch())
 		{
-			//Получение масива идентификаторов сайта
+			//РџРѕР»СѓС‡РµРЅРёРµ РјР°СЃРёРІР° РёРґРµРЅС‚РёС„РёРєР°С‚РѕСЂРѕРІ СЃР°Р№С‚Р°
 			$arSites = array();
 			$rsSites = CSite::GetList($by="sort", $order="desc", Array());
 			while ($arSite = $rsSites->Fetch())
@@ -81,13 +81,13 @@ GetMessage("EVENT_MESSAGE_HEADER_DESC")." #SITE_NAME#
 
 ".GetMessage("EVENT_MESSAGE_CALLTIME_DESC").":
 ".GetMessage("EVENT_MESSAGE_CALLTIME_DAY").": #DAY#
-".GetMessage("EVENT_MESSAGE_CALLTIME_TIME").": с #TIME#
+".GetMessage("EVENT_MESSAGE_CALLTIME_TIME").": СЃ #TIME#
 
 ".GetMessage("EVENT_MESSAGE_FOOTER_DESC").".
 					"
 				)
 			);
-			//Получение идентификатора созданного почтового шаблона для сохранения в настройках модуля.
+			//РџРѕР»СѓС‡РµРЅРёРµ РёРґРµРЅС‚РёС„РёРєР°С‚РѕСЂР° СЃРѕР·РґР°РЅРЅРѕРіРѕ РїРѕС‡С‚РѕРІРѕРіРѕ С€Р°Р±Р»РѕРЅР° РґР»СЏ СЃРѕС…СЂР°РЅРµРЅРёСЏ РІ РЅР°СЃС‚СЂРѕР№РєР°С… РјРѕРґСѓР»СЏ.
 			$ems = CEventMessage::GetList($by="", $order="desc", Array(				
 					"TYPE_ID"       => "ORDER_CALL",				
 					"ACTIVE"        => "Y",
@@ -95,7 +95,7 @@ GetMessage("EVENT_MESSAGE_HEADER_DESC")." #SITE_NAME#
 					"BODY_TYPE"     => "text",
 				)
 			);
-			if ($ems_el = $ems->Fetch())//Установка идентификатора почтового шаблона в настройках модуля
+			if ($ems_el = $ems->Fetch())//РЈСЃС‚Р°РЅРѕРІРєР° РёРґРµРЅС‚РёС„РёРєР°С‚РѕСЂР° РїРѕС‡С‚РѕРІРѕРіРѕ С€Р°Р±Р»РѕРЅР° РІ РЅР°СЃС‚СЂРѕР№РєР°С… РјРѕРґСѓР»СЏ
 				COption::SetOptionString("interra.callback","event_mess_id",$ems_el['ID']);
 		}
 	}
@@ -104,7 +104,7 @@ GetMessage("EVENT_MESSAGE_HEADER_DESC")." #SITE_NAME#
 	{
 		CModule::IncludeModule('iblock');
 		
-		//Проверка наличия необходимого типа инфоблока
+		//РџСЂРѕРІРµСЂРєР° РЅР°Р»РёС‡РёСЏ РЅРµРѕР±С…РѕРґРёРјРѕРіРѕ С‚РёРїР° РёРЅС„РѕР±Р»РѕРєР°
 		$db_iblock_type = CIBlockType::GetList(array(),array("ID"=>"cbk_callback"));
 		if (!$ar_iblock_type = $db_iblock_type->Fetch())
 		{
@@ -130,9 +130,9 @@ GetMessage("EVENT_MESSAGE_HEADER_DESC")." #SITE_NAME#
 			$obBlocktype = new CIBlockType;
 			
 			if ($res = $obBlocktype->Add($arFields))
-			//Если тип инфоблока успешно добавлен, добавляется инфоблок
+			//Р•СЃР»Рё С‚РёРї РёРЅС„РѕР±Р»РѕРєР° СѓСЃРїРµС€РЅРѕ РґРѕР±Р°РІР»РµРЅ, РґРѕР±Р°РІР»СЏРµС‚СЃСЏ РёРЅС„РѕР±Р»РѕРє
 			{
-				//Получение масива идентификаторов сайта
+				//РџРѕР»СѓС‡РµРЅРёРµ РјР°СЃРёРІР° РёРґРµРЅС‚РёС„РёРєР°С‚РѕСЂРѕРІ СЃР°Р№С‚Р°
 				$arSites = array();
 				$rsSites = CSite::GetList($by="sort", $order="desc", Array());
 				while ($arSite = $rsSites->Fetch())
@@ -140,7 +140,7 @@ GetMessage("EVENT_MESSAGE_HEADER_DESC")." #SITE_NAME#
 					$arSites[] = $arSite['LID'];
 				}				
 				
-				//Получение идентификатора типа инфоблока перед добавлением инфоблока
+				//РџРѕР»СѓС‡РµРЅРёРµ РёРґРµРЅС‚РёС„РёРєР°С‚РѕСЂР° С‚РёРїР° РёРЅС„РѕР±Р»РѕРєР° РїРµСЂРµРґ РґРѕР±Р°РІР»РµРЅРёРµРј РёРЅС„РѕР±Р»РѕРєР°
 				$db_iblock_type = CIBlockType::GetByID("cbk_callback");
 				if ($ar_iblock_type = $db_iblock_type->Fetch())
 					$iblock_type_id=$ar_iblock_type["ID"];
@@ -160,7 +160,7 @@ GetMessage("EVENT_MESSAGE_HEADER_DESC")." #SITE_NAME#
 					
 					if ($ib_id = $ib->Add($arFields))
 					{
-						//Проверка наличия свойств
+						//РџСЂРѕРІРµСЂРєР° РЅР°Р»РёС‡РёСЏ СЃРІРѕР№СЃС‚РІ
 						$db_iblock_prop = CIBlockProperty::GetList(array(),array('IBLOCK_ID'=>$ib_id));
 							if (!$ar_iblock_prop = $db_iblock_prop->Fetch())
 							{
@@ -198,7 +198,7 @@ GetMessage("EVENT_MESSAGE_HEADER_DESC")." #SITE_NAME#
 									$pb->Add($arItem);
 								}
 							}
-						//Установка идентификатора инфоблока в настройках модуля
+						//РЈСЃС‚Р°РЅРѕРІРєР° РёРґРµРЅС‚РёС„РёРєР°С‚РѕСЂР° РёРЅС„РѕР±Р»РѕРєР° РІ РЅР°СЃС‚СЂРѕР№РєР°С… РјРѕРґСѓР»СЏ
 							COption::SetOptionString("interra.callback","iblock_id",$ib_id);
 					}					
 				}
@@ -207,19 +207,19 @@ GetMessage("EVENT_MESSAGE_HEADER_DESC")." #SITE_NAME#
 	}
 	
 	static function Save(
-	//Сохранение заказа в инфоблок
+	//РЎРѕС…СЂР°РЅРµРЅРёРµ Р·Р°РєР°Р·Р° РІ РёРЅС„РѕР±Р»РѕРє
 		$arFields = Array(	
-			"AUTHOR", //Автор сообщения
-			"AUTHOR_PHONE", //Номер телефона автора для звонка
-			"TIME", //Время
-			"DAY" //День
+			"AUTHOR", //РђРІС‚РѕСЂ СЃРѕРѕР±С‰РµРЅРёСЏ
+			"AUTHOR_PHONE", //РќРѕРјРµСЂ С‚РµР»РµС„РѕРЅР° Р°РІС‚РѕСЂР° РґР»СЏ Р·РІРѕРЅРєР°
+			"TIME", //Р’СЂРµРјСЏ
+			"DAY" //Р”РµРЅСЊ
 			)
 	)
     {
-		//Добавление инфоблока для сохранения заказов, если он отсутствует
+		//Р”РѕР±Р°РІР»РµРЅРёРµ РёРЅС„РѕР±Р»РѕРєР° РґР»СЏ СЃРѕС…СЂР°РЅРµРЅРёСЏ Р·Р°РєР°Р·РѕРІ, РµСЃР»Рё РѕРЅ РѕС‚СЃСѓС‚СЃС‚РІСѓРµС‚
 		CBKcall::IblockCreate();
 
-		// Получение идентификатора инфоблока из настроек модуля
+		// РџРѕР»СѓС‡РµРЅРёРµ РёРґРµРЅС‚РёС„РёРєР°С‚РѕСЂР° РёРЅС„РѕР±Р»РѕРєР° РёР· РЅР°СЃС‚СЂРѕРµРє РјРѕРґСѓР»СЏ
 		$iblock_id=COption::GetOptionString("interra.callback","iblock_id");
 
 		$ib_elem = new CIBlockElement;
@@ -242,31 +242,31 @@ GetMessage("EVENT_MESSAGE_HEADER_DESC")." #SITE_NAME#
 		$res=$ib_elem->Add($arLoadOrderArray);
 	}
     static function SendEmail(
-	//Отправка заказа звонка на почту
+	//РћС‚РїСЂР°РІРєР° Р·Р°РєР°Р·Р° Р·РІРѕРЅРєР° РЅР° РїРѕС‡С‚Сѓ
 		$arFields = Array(	
-			"AUTHOR", //Автор сообщения
-			"AUTHOR_PHONE", //Номер телефона автора для звонка
-			"TIME", //Время
-			"DAY" //День
+			"AUTHOR", //РђРІС‚РѕСЂ СЃРѕРѕР±С‰РµРЅРёСЏ
+			"AUTHOR_PHONE", //РќРѕРјРµСЂ С‚РµР»РµС„РѕРЅР° Р°РІС‚РѕСЂР° РґР»СЏ Р·РІРѕРЅРєР°
+			"TIME", //Р’СЂРµРјСЏ
+			"DAY" //Р”РµРЅСЊ
 		)
 	)
     {	
 	
 	
-		//Добавление нового типа почтового события (ORDER_CALL) для русского и английского языков
+		//Р”РѕР±Р°РІР»РµРЅРёРµ РЅРѕРІРѕРіРѕ С‚РёРїР° РїРѕС‡С‚РѕРІРѕРіРѕ СЃРѕР±С‹С‚РёСЏ (ORDER_CALL) РґР»СЏ СЂСѓСЃСЃРєРѕРіРѕ Рё Р°РЅРіР»РёР№СЃРєРѕРіРѕ СЏР·С‹РєРѕРІ
 		CBKcall::EventTypeCreate();
-		//Добавление нового почтового шаблона для типа почтового события ORDER_CALL
+		//Р”РѕР±Р°РІР»РµРЅРёРµ РЅРѕРІРѕРіРѕ РїРѕС‡С‚РѕРІРѕРіРѕ С€Р°Р±Р»РѕРЅР° РґР»СЏ С‚РёРїР° РїРѕС‡С‚РѕРІРѕРіРѕ СЃРѕР±С‹С‚РёСЏ ORDER_CALL
 		CBKcall::EventMessageCreate();
 		
 		
-		//Логика функции
+		//Р›РѕРіРёРєР° С„СѓРЅРєС†РёРё
 
 		$email_to=COption::GetOptionString("interra.callback","email");		
 		if (strlen($email_to)==0)
 			$email_to=COption::GetOptionString('main', 'email_from');		
 		if (strlen($email_to)!=0)
 		{			
-			//Получение масива идентификаторов сайта
+			//РџРѕР»СѓС‡РµРЅРёРµ РјР°СЃРёРІР° РёРґРµРЅС‚РёС„РёРєР°С‚РѕСЂРѕРІ СЃР°Р№С‚Р°
 			$arSites = array();
 			$rsSites = CSite::GetList($by="sort", $order="desc", Array());
 			while ($arSite = $rsSites->Fetch())
@@ -274,14 +274,14 @@ GetMessage("EVENT_MESSAGE_HEADER_DESC")." #SITE_NAME#
 				$arSites[] = $arSite['LID'];
 			}
 			
-			//Получение идентификатора почтового шаблона из настроек модуля
+			//РџРѕР»СѓС‡РµРЅРёРµ РёРґРµРЅС‚РёС„РёРєР°С‚РѕСЂР° РїРѕС‡С‚РѕРІРѕРіРѕ С€Р°Р±Р»РѕРЅР° РёР· РЅР°СЃС‚СЂРѕРµРє РјРѕРґСѓР»СЏ
 			$event_mess_id=COption::GetOptionString("interra.callback","event_mess_id");			
-			//Получение имени типа почтового события для полученного идентификатора почтового шаблона			
+			//РџРѕР»СѓС‡РµРЅРёРµ РёРјРµРЅРё С‚РёРїР° РїРѕС‡С‚РѕРІРѕРіРѕ СЃРѕР±С‹С‚РёСЏ РґР»СЏ РїРѕР»СѓС‡РµРЅРЅРѕРіРѕ РёРґРµРЅС‚РёС„РёРєР°С‚РѕСЂР° РїРѕС‡С‚РѕРІРѕРіРѕ С€Р°Р±Р»РѕРЅР°			
 			$ems = CEventMessage::GetByID($event_mess_id);
 			
 			if ($ems_el=$ems->Fetch())
 				$event_name=$ems_el["EVENT_NAME"];
-			//Установка email получателя перед отправкой сообщения
+			//РЈСЃС‚Р°РЅРѕРІРєР° email РїРѕР»СѓС‡Р°С‚РµР»СЏ РїРµСЂРµРґ РѕС‚РїСЂР°РІРєРѕР№ СЃРѕРѕР±С‰РµРЅРёСЏ
 			$arFields["EMAIL_TO"]=$email_to;									
 			
 			CEvent::Send($event_name, $arSites, $arFields, "N", $event_mess_id);			
@@ -290,49 +290,49 @@ GetMessage("EVENT_MESSAGE_HEADER_DESC")." #SITE_NAME#
     }
 	
 	static function SendSMS(
-	//Отправка заказа звонка на мобильный телефон
+	//РћС‚РїСЂР°РІРєР° Р·Р°РєР°Р·Р° Р·РІРѕРЅРєР° РЅР° РјРѕР±РёР»СЊРЅС‹Р№ С‚РµР»РµС„РѕРЅ
 		$arFields = Array(	
-			"AUTHOR", //Автор сообщения
-			"AUTHOR_PHONE", //Номер телефона автора для звонка
-			"TIME", //Время
-			"DAY" //День
+			"AUTHOR", //РђРІС‚РѕСЂ СЃРѕРѕР±С‰РµРЅРёСЏ
+			"AUTHOR_PHONE", //РќРѕРјРµСЂ С‚РµР»РµС„РѕРЅР° Р°РІС‚РѕСЂР° РґР»СЏ Р·РІРѕРЅРєР°
+			"TIME", //Р’СЂРµРјСЏ
+			"DAY" //Р”РµРЅСЊ
 		)		
 	)
 	{
-		// Получение заничений login и api key из настроек модуля для дальнейшего использований класса smsc.ru
+		// РџРѕР»СѓС‡РµРЅРёРµ Р·Р°РЅРёС‡РµРЅРёР№ login Рё api key РёР· РЅР°СЃС‚СЂРѕРµРє РјРѕРґСѓР»СЏ РґР»СЏ РґР°Р»СЊРЅРµР№С€РµРіРѕ РёСЃРїРѕР»СЊР·РѕРІР°РЅРёР№ РєР»Р°СЃСЃР° smsc.ru
 		$smsc_login=COption::GetOptionString("interra.callback","smsc_login");
 		$smsc_passw=COption::GetOptionString("interra.callback","smsc_passw");		
 		
-		//Получение номера телефона из настроек модуля для отправки на него сообщений СМС
+		//РџРѕР»СѓС‡РµРЅРёРµ РЅРѕРјРµСЂР° С‚РµР»РµС„РѕРЅР° РёР· РЅР°СЃС‚СЂРѕРµРє РјРѕРґСѓР»СЏ РґР»СЏ РѕС‚РїСЂР°РІРєРё РЅР° РЅРµРіРѕ СЃРѕРѕР±С‰РµРЅРёР№ РЎРњРЎ
 		$phone=COption::GetOptionString("interra.callback","phone");
 		
 		$message=
 GetMessage("EVENT_MESSAGE_PHONE_DESC").": #AUTHOR_PHONE#"."\n".GetMessage("EVENT_MESSAGE_CALLTIME_DESC").":
 #CALL_TIME_TEXT#";
 
-			//Заполняем почтовый шаблон данными для отправки
-			$arFields["CALL_TIME_TEXT"] = $arFields["DAY"]." в ".$arFields["TIME"];
+			//Р—Р°РїРѕР»РЅСЏРµРј РїРѕС‡С‚РѕРІС‹Р№ С€Р°Р±Р»РѕРЅ РґР°РЅРЅС‹РјРё РґР»СЏ РѕС‚РїСЂР°РІРєРё
+			$arFields["CALL_TIME_TEXT"] = $arFields["DAY"]." РІ ".$arFields["TIME"];
 			$message=str_replace("#AUTHOR_PHONE#",$arFields["AUTHOR_PHONE"],$message);
 			$message=str_replace("#CALL_TIME_TEXT#",$arFields["CALL_TIME_TEXT"],$message);
 		
 		
-		// Подключение класса smsc для отправки СМС сообщений
-		define("SMSC_LOGIN", $smsc_login);			// логин клиента
-		define("SMSC_PASSWORD", $smsc_passw);	// пароль или MD5-хеш пароля в нижнем регистре
+		// РџРѕРґРєР»СЋС‡РµРЅРёРµ РєР»Р°СЃСЃР° smsc РґР»СЏ РѕС‚РїСЂР°РІРєРё РЎРњРЎ СЃРѕРѕР±С‰РµРЅРёР№
+		define("SMSC_LOGIN", $smsc_login);			// Р»РѕРіРёРЅ РєР»РёРµРЅС‚Р°
+		define("SMSC_PASSWORD", $smsc_passw);	// РїР°СЂРѕР»СЊ РёР»Рё MD5-С…РµС€ РїР°СЂРѕР»СЏ РІ РЅРёР¶РЅРµРј СЂРµРіРёСЃС‚СЂРµ
 		require($_SERVER['DOCUMENT_ROOT']."/bitrix/modules/interra.callback/classes/main/smsc_api.php");
-		// Получение имени отправителя
+		// РџРѕР»СѓС‡РµРЅРёРµ РёРјРµРЅРё РѕС‚РїСЂР°РІРёС‚РµР»СЏ
 		$sender=COption::GetOptionString("interra.callback","smsc_sender_name");
 
-		// отправка СМС
+		// РѕС‚РїСЂР°РІРєР° РЎРњРЎ
 		$res = send_sms($phone, $message);
 	}
 	
 	static function Order(
 		$arFields = Array(	
-			"AUTHOR", //Автор сообщения
-			"AUTHOR_PHONE", //Номер телефона автора для звонка
-			"TIME", //Время
-			"DAY" //День
+			"AUTHOR", //РђРІС‚РѕСЂ СЃРѕРѕР±С‰РµРЅРёСЏ
+			"AUTHOR_PHONE", //РќРѕРјРµСЂ С‚РµР»РµС„РѕРЅР° Р°РІС‚РѕСЂР° РґР»СЏ Р·РІРѕРЅРєР°
+			"TIME", //Р’СЂРµРјСЏ
+			"DAY" //Р”РµРЅСЊ
 		)
 	)
 	{		

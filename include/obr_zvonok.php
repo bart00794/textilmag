@@ -3,7 +3,7 @@
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-        <h4 class="modal-title" id="myModalLabel">Заказать обратный звонок</h4>
+        <h4 class="modal-title" id="myModalLabel">Р—Р°РєР°Р·Р°С‚СЊ РѕР±СЂР°С‚РЅС‹Р№ Р·РІРѕРЅРѕРє</h4>
       </div>
       <div class="modal-body">
 <?$APPLICATION->IncludeComponent(
@@ -11,7 +11,7 @@
 	"",
 	Array(
 		"USE_CAPTCHA" => "Y",
-		"OK_TEXT" => "Спасибо, мы вам перезвоним.",
+		"OK_TEXT" => "РЎРїР°СЃРёР±Рѕ, РјС‹ РІР°Рј РїРµСЂРµР·РІРѕРЅРёРј.",
 		"EMAIL_TO" => "ek@222111.ru",
 		"REQUIRED_FIELDS" => array("PHONE")
 	),

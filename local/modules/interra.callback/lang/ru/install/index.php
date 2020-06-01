@@ -1,4 +1,4 @@
 <?
-$MESS['IX_GB_MODULE_NAME']="Çàêàç çâîíêà";
-$MESS['IX_GB_MODULE_DESC']="Çàêàç çâîíêà ñ îïîâåùåíèåì ïî ÑÌÑ è e-mail";
+$MESS['IX_GB_MODULE_NAME']="Ð—Ð°ÐºÐ°Ð· Ð·Ð²Ð¾Ð½ÐºÐ°";
+$MESS['IX_GB_MODULE_DESC']="Ð—Ð°ÐºÐ°Ð· Ð·Ð²Ð¾Ð½ÐºÐ° Ñ Ð¾Ð¿Ð¾Ð²ÐµÑ‰ÐµÐ½Ð¸ÐµÐ¼ Ð¿Ð¾ Ð¡ÐœÐ¡ Ð¸ e-mail";
 ?>

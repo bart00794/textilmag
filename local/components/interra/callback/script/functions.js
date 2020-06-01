@@ -13,7 +13,7 @@ $(function(){
 		var loadText = "<img src='/bitrix/components/interra/callback/images/animation.gif'>";
 
 		$(".loadBar").html(loadText).show();
-		//подготавливаем и отправляем данные…
+		//РїРѕРґРіРѕС‚Р°РІР»РёРІР°РµРј Рё РѕС‚РїСЂР°РІР»СЏРµРј РґР°РЅРЅС‹РµвЂ¦
 		
 		var form = $(this);
 		var url = form.attr('action');
@@ -28,7 +28,7 @@ $(function(){
 		var captcha_sid = $(this).find("input[name=captcha_sid]").val();
 		var captcha_word = $(this).find("input[name=captcha_word]").val();
 		
-		// если поле Сообщение активно
+		// РµСЃР»Рё РїРѕР»Рµ РЎРѕРѕР±С‰РµРЅРёРµ Р°РєС‚РёРІРЅРѕ
 			$.post(url, 
 			  {
 				  form_type: type,

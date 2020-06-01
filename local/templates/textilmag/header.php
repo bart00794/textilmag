@@ -1,7 +1,7 @@
 <? if (!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED !== true) die();
 
-use Bitrix\Main\Page\Asset;
 use Bitrix\Main\Context;
+use Bitrix\Main\Page\Asset;
 
 //CSS Files
 Asset::getInstance()->addCss(SITE_TEMPLATE_PATH . '/css/bootstrap.min.css');
@@ -17,6 +17,7 @@ Asset::getInstance()->addJs(SITE_TEMPLATE_PATH . '/js/jquery-3.4.1.min.js');
 Asset::getInstance()->addJs(SITE_TEMPLATE_PATH . '/js/bootstrap.min.js');
 Asset::getInstance()->addJs(SITE_TEMPLATE_PATH . '/js/jquery.fancybox.min.js');
 Asset::getInstance()->addJs(SITE_TEMPLATE_PATH . '/js/owl.carousel.min.js');
+Asset::getInstance()->addJs(SITE_TEMPLATE_PATH . '/js/jquery.zoom.min.js');
 Asset::getInstance()->addJs(SITE_TEMPLATE_PATH . '/js/scripts.js');
 
 ?>
@@ -104,7 +105,7 @@ Asset::getInstance()->addJs(SITE_TEMPLATE_PATH . '/js/scripts.js');
                                     "SHOW_INPUT" => "Y",
                                     "INPUT_ID" => "title-search-input",
                                     "CONTAINER_ID" => "title-search",
-                                    "CATEGORY_0_TITLE" => "Ïðîäóêöèÿ",
+                                    "CATEGORY_0_TITLE" => "ÐŸÑ€Ð¾Ð´ÑƒÐºÑ†Ð¸Ñ",
                                     "CATEGORY_0" => array(
                                         0 => "iblock_products",
                                     ),

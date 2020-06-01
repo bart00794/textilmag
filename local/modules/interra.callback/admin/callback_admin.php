@@ -46,10 +46,10 @@ if ($_SERVER['REQUEST_METHOD']=="POST" && strlen($_POST['Update'])>0)
 	$smsc_sender_name=COption::GetOptionString("interra.callback","smsc_sender_name");
 		
 	$iblock_use=COption::GetOptionString("interra.callback","iblock_use");
-	// Получаем ID текущего инфоблока
+	// РџРѕР»СѓС‡Р°РµРј ID С‚РµРєСѓС‰РµРіРѕ РёРЅС„РѕР±Р»РѕРєР°
 	$cur_iblock_id=COption::GetOptionString("interra.callback","iblock_id");	
 	
-	//Получаем список всех активных инфоблоков
+	//РџРѕР»СѓС‡Р°РµРј СЃРїРёСЃРѕРє РІСЃРµС… Р°РєС‚РёРІРЅС‹С… РёРЅС„РѕР±Р»РѕРєРѕРІ
 	$iblock_res = CIBlock::GetList(
 		Array(),
 		Array(

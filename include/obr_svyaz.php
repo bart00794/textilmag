@@ -4,7 +4,7 @@
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-        <h4 class="modal-title" id="myModalLabel">Напишите нам!</h4>
+        <h4 class="modal-title" id="myModalLabel">РќР°РїРёС€РёС‚Рµ РЅР°Рј!</h4>
       </div>
       <div class="modal-body">
 
@@ -14,7 +14,7 @@
 	"template", 
 	array(
 		"USE_CAPTCHA" => "Y",
-		"OK_TEXT" => "Спасибо, ваше сообщение принято.",
+		"OK_TEXT" => "РЎРїР°СЃРёР±Рѕ, РІР°С€Рµ СЃРѕРѕР±С‰РµРЅРёРµ РїСЂРёРЅСЏС‚Рѕ.",
 		"EMAIL_TO" => "zakaz@222111.ru, textilmag@yandex.ru",
 		"REQUIRED_FIELDS" => array(
 			0 => "NAME",

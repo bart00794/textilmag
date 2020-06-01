@@ -18,7 +18,7 @@ $arSectionDeleteParams = array("CONFIRM" => GetMessage('CT_BCSL_ELEMENT_DELETE_C
 
 ?>
 <div class="product-widget categroy-widget mb--35 mb-md--30 <? echo $arCurView['CONT']; ?>">
-    <h3 class="widget-title">Категории</h3>
+    <h3 class="widget-title">РљР°С‚РµРіРѕСЂРёРё</h3>
     <?
     if (0 < $arResult["SECTIONS_COUNT"]) {
         ?>

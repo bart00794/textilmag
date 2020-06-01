@@ -2,7 +2,7 @@
 session_start();
 require($_SERVER["DOCUMENT_ROOT"]."/bitrix/modules/main/include/prolog_before.php");?>
 <?
-parse_str($_POST["razmer"], $searcharray);//ðàçáîð serialize
+parse_str($_POST["razmer"], $searcharray);//Ñ€Ð°Ð·Ð±Ð¾Ñ€ serialize
 if(is_array($_SESSION['BASKET'][$_POST['id']])){
 	foreach($searcharray as $key=>$val){
 	if(isset($_SESSION['BASKET'][$_POST['id']][$key])){

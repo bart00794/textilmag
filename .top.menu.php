@@ -1,42 +1,42 @@
 <?
 $aMenuLinks = Array(
 	Array(
-		"Ãëàâíàÿ", 
+		"Ð“Ð»Ð°Ð²Ð½Ð°Ñ", 
 		"/index.php", 
 		Array(), 
 		Array(), 
 		"" 
 	),
 	Array(
-		"Î íàñ", 
+		"Ðž Ð½Ð°Ñ", 
 		"/about/", 
 		Array(), 
 		Array(), 
 		"" 
 	),
 	Array(
-		"Êàòàëîã", 
+		"ÐšÐ°Ñ‚Ð°Ð»Ð¾Ð³", 
 		"/products/", 
 		Array(), 
 		Array(), 
 		"" 
 	),
 	Array(
-		"Êàê çàêàçàòü", 
+		"ÐšÐ°Ðº Ð·Ð°ÐºÐ°Ð·Ð°Ñ‚ÑŒ", 
 		"/kak-zakazat/", 
 		Array(), 
 		Array(), 
 		"" 
 	),
 	Array(
-		"Ïðàéñ", 
+		"ÐŸÑ€Ð°Ð¹Ñ", 
 		"/kak-zakazat/price.xlsx", 
 		Array(), 
 		Array(), 
 		"" 
 	),
 	Array(
-		"Êîíòàêòû", 
+		"ÐšÐ¾Ð½Ñ‚Ð°ÐºÑ‚Ñ‹", 
 		"/contacts/", 
 		Array(), 
 		Array(), 

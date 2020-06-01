@@ -17,10 +17,9 @@ Loc::loadMessages(__FILE__);
                 <div class="airi-product">
                     <div class="product-inner">
                         <figure class="product-image">
-                            <div class="product-image--holder">
-                                <a href="<?=$arElement['DETAIL_PAGE_URL'];?>">
-                                    <img src="<?=$arElement['PICTURE']['SRC'];?>" alt="Product Image" class="primary-image">
-                                    <img src="<?=$arElement['PICTURE']['SRC'];?>" alt="Product Image" class="secondary-image">
+                            <div class="zoom-photo__wrap">
+                                <a href="<?=$arElement['DETAIL_PAGE_URL'];?>" class="zoom-photo__href" data-src="<?=$arElement['PICTURE']['FULL']['SRC'];?>">
+                                    <img src="<?=$arElement['PICTURE']['SRC'];?>" alt="<?=$arElement['NAME'];?>" class="zoom-photo__img">
                                 </a>
                             </div>
                         </figure>

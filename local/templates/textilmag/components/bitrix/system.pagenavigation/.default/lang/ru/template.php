@@ -1,3 +1,3 @@
 <?
-$MESS["round_nav_pages"] = "Ñòðàíèöû";
-$MESS["round_nav_all"] = "Âñå";
+$MESS["round_nav_pages"] = "Ð¡Ñ‚Ñ€Ð°Ð½Ð¸Ñ†Ñ‹";
+$MESS["round_nav_all"] = "Ð’ÑÐµ";

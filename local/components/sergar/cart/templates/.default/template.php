@@ -17,10 +17,10 @@
                                                 <tr>
                                                     <th>&nbsp;</th>
                                                     <th>&nbsp;</th>
-                                                    <th class="text-left">Название</th>
-                                                    <th>Цена</th>
-                                                    <th>Колличество</th>
-                                                    <th>Сумма</th>
+                                                    <th class="text-left">РќР°Р·РІР°РЅРёРµ</th>
+                                                    <th>Р¦РµРЅР°</th>
+                                                    <th>РљРѕР»Р»РёС‡РµСЃС‚РІРѕ</th>
+                                                    <th>РЎСѓРјРјР°</th>
                                                 </tr>
                                                 </thead>
                                                 <tbody>
@@ -78,7 +78,7 @@
                                     </div>
                                     <div class="col-12">
                                         <button class="btn btn-fullwidth btn-style-2 mt--35" name="update"
-                                                id="updateCart">Обновить корзину
+                                                id="updateCart">РћР±РЅРѕРІРёС‚СЊ РєРѕСЂР·РёРЅСѓ
                                         </button>
                                     </div>
                                 </div>
@@ -87,11 +87,11 @@
                         <div class="col-lg-4">
                             <div class="cart-collaterals">
                                 <div class="cart-totals">
-                                    <h5 class="mb--15">Оформление заказа</h5>
+                                    <h5 class="mb--15">РћС„РѕСЂРјР»РµРЅРёРµ Р·Р°РєР°Р·Р°</h5>
                                     <div class="table-content table-responsive">
                                         <div class="">
                                             <div class="form-group">
-                                                <label>Имя, Фамилия<strong>*</strong></label>
+                                                <label>РРјСЏ, Р¤Р°РјРёР»РёСЏ<strong>*</strong></label>
                                                 <input name="name" class="form__input form__input--2" type="text"
                                                        required="required">
                                             </div>
@@ -101,38 +101,38 @@
                                                        required="required">
                                             </div>
                                             <div class="form-group">
-                                                <label>Телефон <strong>*</strong></label>
+                                                <label>РўРµР»РµС„РѕРЅ <strong>*</strong></label>
                                                 <input name="phone" class="form__input form__input--2" type="text"
                                                        required="required">
                                             </div>
                                             <div class="form-group">
-                                                <label>Транспортная компания</label>
+                                                <label>РўСЂР°РЅСЃРїРѕСЂС‚РЅР°СЏ РєРѕРјРїР°РЅРёСЏ</label>
                                                 <select name="shipping" class="form__input form__input--2">
-                                                    <option>-- Выберите --</option>
-                                                    <option>ЖелДорЭкспедиция</option>
-                                                    <option>Деловые линии</option>
-                                                    <option>Автротрейдинг</option>
-                                                    <option>Транс-Вектор</option>
-                                                    <option>КИТ</option>
+                                                    <option>-- Р’С‹Р±РµСЂРёС‚Рµ --</option>
+                                                    <option>Р–РµР»Р”РѕСЂР­РєСЃРїРµРґРёС†РёСЏ</option>
+                                                    <option>Р”РµР»РѕРІС‹Рµ Р»РёРЅРёРё</option>
+                                                    <option>РђРІС‚СЂРѕС‚СЂРµР№РґРёРЅРі</option>
+                                                    <option>РўСЂР°РЅСЃ-Р’РµРєС‚РѕСЂ</option>
+                                                    <option>РљРРў</option>
                                                 </select>
                                             </div>
                                             <div class="form-group">
-                                                <label>Адрес доставки</label>
+                                                <label>РђРґСЂРµСЃ РґРѕСЃС‚Р°РІРєРё</label>
                                                 <textarea class="form__input form__input--2" name="address"></textarea>
                                             </div>
                                             <div class="form-group">
-                                                <label>Комментарий к заказу</label>
+                                                <label>РљРѕРјРјРµРЅС‚Р°СЂРёР№ Рє Р·Р°РєР°Р·Сѓ</label>
                                                 <textarea class="form__input form__input--2" name="comments"></textarea>
                                             </div>
                                             <div class="form-group">
-                                                <strong>*</strong> — поля, обязательные для заполнения
+                                                <strong>*</strong> вЂ” РїРѕР»СЏ, РѕР±СЏР·Р°С‚РµР»СЊРЅС‹Рµ РґР»СЏ Р·Р°РїРѕР»РЅРµРЅРёСЏ
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                                 <div>
                                     <input class="btn btn-fullwidth btn-style-1" type="submit"
-                                           value="Отправить сообщение" name="submit">
+                                           value="РћС‚РїСЂР°РІРёС‚СЊ СЃРѕРѕР±С‰РµРЅРёРµ" name="submit">
                                 </div>
                             </div>
                         </div>
@@ -140,7 +140,7 @@
                 </form>
             <? } else { ?>
                 <div class="col-lg-12">
-                    <p class="text-center">В корзине сейчас ничего нет. <a href="/products/">Перейти к покупкам.</a></p>
+                    <p class="text-center">Р’ РєРѕСЂР·РёРЅРµ СЃРµР№С‡Р°СЃ РЅРёС‡РµРіРѕ РЅРµС‚. <a href="/products/">РџРµСЂРµР№С‚Рё Рє РїРѕРєСѓРїРєР°Рј.</a></p>
                 </div>
             <? } ?>
         </div>

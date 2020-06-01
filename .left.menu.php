@@ -1,7 +1,7 @@
 <?
 $aMenuLinks = Array(
 	Array(
-		"Êàê çàêàçàòü", 
+		"ÐšÐ°Ðº Ð·Ð°ÐºÐ°Ð·Ð°Ñ‚ÑŒ", 
 		"/kak-zakazat/", 
 		Array(), 
 		Array(), 

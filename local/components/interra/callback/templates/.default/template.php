@@ -11,7 +11,7 @@ if(!defined("B_PROLOG_INCLUDED")||B_PROLOG_INCLUDED!==true)die();
  */
  ?>
 <div align="left" class="loadBar"></div>
-<!--Заказать звонок-->
+<!--Р—Р°РєР°Р·Р°С‚СЊ Р·РІРѕРЅРѕРє-->
    <div class="frm_place">
 <?if(!empty($arResult["ERROR_MESSAGE"]))
 {

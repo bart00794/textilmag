@@ -47,6 +47,7 @@ $(function () {
         }
     }
 
+
     $('.ai-preloader').removeClass("active");
     stickyHeader();
 });

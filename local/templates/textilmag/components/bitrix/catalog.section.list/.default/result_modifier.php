@@ -6,12 +6,11 @@ if (0 < $arResult['SECTIONS_COUNT']) {
         }else{
             $res = CFile::ResizeImageGet(
                 $arSection["PICTURE"],
-                ['width'=>500,'height'=>600],
-                BX_RESIZE_IMAGE_PROPORTIONAL,
+                ['width'=>350,'height'=>400],
+                BX_RESIZE_IMAGE_EXACT,
                 true
             );
         }
-        $arSection['PICTURE'] = $res;
-//        dump($res);
+        $arSection['PICTURE_PREVIEW'] = $res;
     }
 }

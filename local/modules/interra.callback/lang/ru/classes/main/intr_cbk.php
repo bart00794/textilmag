@@ -1,36 +1,36 @@
 <?
-$MESS["EVENT_NAME_DESC"] = "Çàêàç çâîíêà";
-$MESS["AUTHOR_DESC"] = "Àâòîð ñîîáùåíèÿ";
-$MESS["AUTHOR_PHONE_DESC"] = "Íîìåð òåëåôîíà àâòîðà ñîîáùåíèÿ";
-$MESS["CALL_TIME_DESC"] = "Âðåìÿ çâîíêà";
-$MESS["CALL_DATE_DESC"] = "Äåíü çâîíêà";
-$MESS["EMAIL_DESC"] = "Email ïîëó÷àòåëÿ ïèñüìà";
+$MESS["EVENT_NAME_DESC"] = "Ð—Ð°ÐºÐ°Ð· Ð·Ð²Ð¾Ð½ÐºÐ°";
+$MESS["AUTHOR_DESC"] = "ÐÐ²Ñ‚Ð¾Ñ€ ÑÐ¾Ð¾Ð±Ñ‰ÐµÐ½Ð¸Ñ";
+$MESS["AUTHOR_PHONE_DESC"] = "ÐÐ¾Ð¼ÐµÑ€ Ñ‚ÐµÐ»ÐµÑ„Ð¾Ð½Ð° Ð°Ð²Ñ‚Ð¾Ñ€Ð° ÑÐ¾Ð¾Ð±Ñ‰ÐµÐ½Ð¸Ñ";
+$MESS["CALL_TIME_DESC"] = "Ð’Ñ€ÐµÐ¼Ñ Ð·Ð²Ð¾Ð½ÐºÐ°";
+$MESS["CALL_DATE_DESC"] = "Ð”ÐµÐ½ÑŒ Ð·Ð²Ð¾Ð½ÐºÐ°";
+$MESS["EMAIL_DESC"] = "Email Ð¿Ð¾Ð»ÑƒÑ‡Ð°Ñ‚ÐµÐ»Ñ Ð¿Ð¸ÑÑŒÐ¼Ð°";
 
 
-$MESS["EVENT_MESSAGE_SUBJECT_DESC"] = "#SITE_NAME# Çàêàç çâîíêà";
-$MESS["EVENT_MESSAGE_HEADER_DESC"] = "Èíôîðìàöèîííîå ñîîáùåíèå ñàéòà";
-$MESS["EVENT_MESSAGE_FOOTER_DESC"] = "Ñîîáùåíèå ñãåíåðèðîâàíî àâòîìàòè÷åñêè";
-$MESS["EVENT_MESSAGE_ACT_DESC"] = "Ïðîèçâåäåí çàêàç çâîíêà";
-$MESS["EVENT_MESSAGE_AUTHOR_DESC"] = "Àâòîð";
-$MESS["EVENT_MESSAGE_PHONE_DESC"] = "Íîìåð";
-$MESS["EVENT_MESSAGE_CALLTIME_DESC"] = "Êîãäà çâîíèòü";
-$MESS["EVENT_MESSAGE_CALLTIME_DAY"] = "Äàòà";
-$MESS["EVENT_MESSAGE_CALLTIME_TIME"] = "Âðåìÿ";
+$MESS["EVENT_MESSAGE_SUBJECT_DESC"] = "#SITE_NAME# Ð—Ð°ÐºÐ°Ð· Ð·Ð²Ð¾Ð½ÐºÐ°";
+$MESS["EVENT_MESSAGE_HEADER_DESC"] = "Ð˜Ð½Ñ„Ð¾Ñ€Ð¼Ð°Ñ†Ð¸Ð¾Ð½Ð½Ð¾Ðµ ÑÐ¾Ð¾Ð±Ñ‰ÐµÐ½Ð¸Ðµ ÑÐ°Ð¹Ñ‚Ð°";
+$MESS["EVENT_MESSAGE_FOOTER_DESC"] = "Ð¡Ð¾Ð¾Ð±Ñ‰ÐµÐ½Ð¸Ðµ ÑÐ³ÐµÐ½ÐµÑ€Ð¸Ñ€Ð¾Ð²Ð°Ð½Ð¾ Ð°Ð²Ñ‚Ð¾Ð¼Ð°Ñ‚Ð¸Ñ‡ÐµÑÐºÐ¸";
+$MESS["EVENT_MESSAGE_ACT_DESC"] = "ÐŸÑ€Ð¾Ð¸Ð·Ð²ÐµÐ´ÐµÐ½ Ð·Ð°ÐºÐ°Ð· Ð·Ð²Ð¾Ð½ÐºÐ°";
+$MESS["EVENT_MESSAGE_AUTHOR_DESC"] = "ÐÐ²Ñ‚Ð¾Ñ€";
+$MESS["EVENT_MESSAGE_PHONE_DESC"] = "ÐÐ¾Ð¼ÐµÑ€";
+$MESS["EVENT_MESSAGE_CALLTIME_DESC"] = "ÐšÐ¾Ð³Ð´Ð° Ð·Ð²Ð¾Ð½Ð¸Ñ‚ÑŒ";
+$MESS["EVENT_MESSAGE_CALLTIME_DAY"] = "Ð”Ð°Ñ‚Ð°";
+$MESS["EVENT_MESSAGE_CALLTIME_TIME"] = "Ð’Ñ€ÐµÐ¼Ñ";
 
 
 
-$MESS["IBLOCK_TYPE_NAME_DESC"] = "Ñïèñîê çàêàçîâ çâîíêîâ";
-$MESS["IBLOCK_TYPE_SECTION_DESC"] = "Ðàçäåëû";
-$MESS["IBLOCK_TYPE_ELEMENT_DESC"] = "Çàêàçû çâîíêîâ";
+$MESS["IBLOCK_TYPE_NAME_DESC"] = "Ð¡Ð¿Ð¸ÑÐ¾Ðº Ð·Ð°ÐºÐ°Ð·Ð¾Ð² Ð·Ð²Ð¾Ð½ÐºÐ¾Ð²";
+$MESS["IBLOCK_TYPE_SECTION_DESC"] = "Ð Ð°Ð·Ð´ÐµÐ»Ñ‹";
+$MESS["IBLOCK_TYPE_ELEMENT_DESC"] = "Ð—Ð°ÐºÐ°Ð·Ñ‹ Ð·Ð²Ð¾Ð½ÐºÐ¾Ð²";
 
-$MESS["IBLOCK_NAME_DESC"] = "Çàêàçû çâîíêîâ";
-$MESS["IBLOCK_DESC"] = "Â äàííîì èíôîáëîêå õðàíèòñÿ èíôîðìàöèÿ î ïðîèçâåäåííûõ çàêàçîâ: Èìåíà, Íîìåðà òåëåôîíîâ è Âðåìÿ äëÿ çâîíêîâ";
+$MESS["IBLOCK_NAME_DESC"] = "Ð—Ð°ÐºÐ°Ð·Ñ‹ Ð·Ð²Ð¾Ð½ÐºÐ¾Ð²";
+$MESS["IBLOCK_DESC"] = "Ð’ Ð´Ð°Ð½Ð½Ð¾Ð¼ Ð¸Ð½Ñ„Ð¾Ð±Ð»Ð¾ÐºÐµ Ñ…Ñ€Ð°Ð½Ð¸Ñ‚ÑÑ Ð¸Ð½Ñ„Ð¾Ñ€Ð¼Ð°Ñ†Ð¸Ñ Ð¾ Ð¿Ñ€Ð¾Ð¸Ð·Ð²ÐµÐ´ÐµÐ½Ð½Ñ‹Ñ… Ð·Ð°ÐºÐ°Ð·Ð¾Ð²: Ð˜Ð¼ÐµÐ½Ð°, ÐÐ¾Ð¼ÐµÑ€Ð° Ñ‚ÐµÐ»ÐµÑ„Ð¾Ð½Ð¾Ð² Ð¸ Ð’Ñ€ÐµÐ¼Ñ Ð´Ð»Ñ Ð·Ð²Ð¾Ð½ÐºÐ¾Ð²";
 
-$MESS["IBLOCK_PROP_NAME"] = "Èìÿ";
-$MESS["IBLOCK_PROP_PHONE"] = "Òåëåôîí";
-$MESS["IBLOCK_PROP_DAY"] = "Äåíü";
-$MESS["IBLOCK_PROP_TIME"] = "Âðåìÿ";
+$MESS["IBLOCK_PROP_NAME"] = "Ð˜Ð¼Ñ";
+$MESS["IBLOCK_PROP_PHONE"] = "Ð¢ÐµÐ»ÐµÑ„Ð¾Ð½";
+$MESS["IBLOCK_PROP_DAY"] = "Ð”ÐµÐ½ÑŒ";
+$MESS["IBLOCK_PROP_TIME"] = "Ð’Ñ€ÐµÐ¼Ñ";
 
-$MESS['CBK_HEAD_MAIL']="Çàêàç îò ";
+$MESS['CBK_HEAD_MAIL']="Ð—Ð°ÐºÐ°Ð· Ð¾Ñ‚ ";
 
 ?>

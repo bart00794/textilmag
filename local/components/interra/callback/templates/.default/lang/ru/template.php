@@ -1,11 +1,11 @@
 <?
-$MESS["CBKT_HEADER"] = "Çàêàç çâîíêà";
-$MESS["CBKT_NAME"] = "Âàøå èìÿ";
-$MESS["CBKT_PHONE"] = "Òåëåôîí";
-$MESS["CBKT_TIME"] = "Äåíü";
-$MESS["CBKT_DAY"] = "Âðåìÿ";
-$MESS["CBKT_CALL"] = "Êîãäà âàì óäîáíî ïîçâîíèòü?";
+$MESS["CBKT_HEADER"] = "Ð—Ð°ÐºÐ°Ð· Ð·Ð²Ð¾Ð½ÐºÐ°";
+$MESS["CBKT_NAME"] = "Ð’Ð°ÑˆÐµ Ð¸Ð¼Ñ";
+$MESS["CBKT_PHONE"] = "Ð¢ÐµÐ»ÐµÑ„Ð¾Ð½";
+$MESS["CBKT_TIME"] = "Ð”ÐµÐ½ÑŒ";
+$MESS["CBKT_DAY"] = "Ð’Ñ€ÐµÐ¼Ñ";
+$MESS["CBKT_CALL"] = "ÐšÐ¾Ð³Ð´Ð° Ð²Ð°Ð¼ ÑƒÐ´Ð¾Ð±Ð½Ð¾ Ð¿Ð¾Ð·Ð²Ð¾Ð½Ð¸Ñ‚ÑŒ?";
 $MESS["CBKT_CAPTCHA"] = "";
-$MESS["CBKT_CAPTCHA_CODE"] = "Ââåäèòå ñëîâî íà êàðòèíêå";
-$MESS["CBKT_SUBMIT"] = "Îòïðàâèòü";
+$MESS["CBKT_CAPTCHA_CODE"] = "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ ÑÐ»Ð¾Ð²Ð¾ Ð½Ð° ÐºÐ°Ñ€Ñ‚Ð¸Ð½ÐºÐµ";
+$MESS["CBKT_SUBMIT"] = "ÐžÑ‚Ð¿Ñ€Ð°Ð²Ð¸Ñ‚ÑŒ";
 ?>

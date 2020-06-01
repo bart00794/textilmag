@@ -1,21 +1,21 @@
 <?
-$MESS["MODULE_ADMIN_TITLE_DESC"] = "Çàêàç çâîíêà: Íàñòðîéêè";
+$MESS["MODULE_ADMIN_TITLE_DESC"] = "Ð—Ð°ÐºÐ°Ð· Ð·Ð²Ð¾Ð½ÐºÐ°: ÐÐ°ÑÑ‚Ñ€Ð¾Ð¹ÐºÐ¸";
 
-$MESS["PROPERTIES_TITLE_DESC"] = "Íàñòðîéêà ïàðàìåòðîâ ìîäóëÿ";
-$MESS["PROPERTIES_DESC"] = "Íàñòðîéêè";
-$MESS["MODULE_PARAMETERS_DESC"] = "Íàñòðîéêè ïàðàìåòðîâ ìîäóëÿ";
-$MESS["ACT_HEADER_DESC"] = "Àêòèâíîñòü";
-$MESS["PARAMETER_HEADER_DESC"] = "Ïàðàìåòð";
-$MESS["VALUE_HEADER_DESC"] = "Çíà÷åíèå";
+$MESS["PROPERTIES_TITLE_DESC"] = "ÐÐ°ÑÑ‚Ñ€Ð¾Ð¹ÐºÐ° Ð¿Ð°Ñ€Ð°Ð¼ÐµÑ‚Ñ€Ð¾Ð² Ð¼Ð¾Ð´ÑƒÐ»Ñ";
+$MESS["PROPERTIES_DESC"] = "ÐÐ°ÑÑ‚Ñ€Ð¾Ð¹ÐºÐ¸";
+$MESS["MODULE_PARAMETERS_DESC"] = "ÐÐ°ÑÑ‚Ñ€Ð¾Ð¹ÐºÐ¸ Ð¿Ð°Ñ€Ð°Ð¼ÐµÑ‚Ñ€Ð¾Ð² Ð¼Ð¾Ð´ÑƒÐ»Ñ";
+$MESS["ACT_HEADER_DESC"] = "ÐÐºÑ‚Ð¸Ð²Ð½Ð¾ÑÑ‚ÑŒ";
+$MESS["PARAMETER_HEADER_DESC"] = "ÐŸÐ°Ñ€Ð°Ð¼ÐµÑ‚Ñ€";
+$MESS["VALUE_HEADER_DESC"] = "Ð—Ð½Ð°Ñ‡ÐµÐ½Ð¸Ðµ";
 
-$MESS["EMAIL_DESC"] = "Îòïðàâëÿòü çàêàçû íà E-mail";
-$MESS["SMSC_DESC"] = "Îòïðàâëÿòü çàêàçû íà òåëåôîí (èñïîëüçîâàòü smsc.ru)";
-$MESS["SMSC_LOGIN_DESC"] = "Ëîãèí";
-$MESS["SMSC_PASSW_DESC"] = "Ïàðîëü";
-$MESS["SMS_SENDER_DESC"] = "Èìÿ îòïðàâèòåëÿ (ïðåæäå óñòàíîâèòü â íàñòðîéêàõ àêêàóíòà smsc.ru)";
-$MESS["IBLOCK_DESC"] = "Ñîõðàíÿòü çàêàçû â èíôîáëîê";
-$MESS["EVENT_MESS_DESC"] = "Ââåäèòå èäåíòèôèêàòîð ïî÷òîâîãî øàáëîíà";
+$MESS["EMAIL_DESC"] = "ÐžÑ‚Ð¿Ñ€Ð°Ð²Ð»ÑÑ‚ÑŒ Ð·Ð°ÐºÐ°Ð·Ñ‹ Ð½Ð° E-mail";
+$MESS["SMSC_DESC"] = "ÐžÑ‚Ð¿Ñ€Ð°Ð²Ð»ÑÑ‚ÑŒ Ð·Ð°ÐºÐ°Ð·Ñ‹ Ð½Ð° Ñ‚ÐµÐ»ÐµÑ„Ð¾Ð½ (Ð¸ÑÐ¿Ð¾Ð»ÑŒÐ·Ð¾Ð²Ð°Ñ‚ÑŒ smsc.ru)";
+$MESS["SMSC_LOGIN_DESC"] = "Ð›Ð¾Ð³Ð¸Ð½";
+$MESS["SMSC_PASSW_DESC"] = "ÐŸÐ°Ñ€Ð¾Ð»ÑŒ";
+$MESS["SMS_SENDER_DESC"] = "Ð˜Ð¼Ñ Ð¾Ñ‚Ð¿Ñ€Ð°Ð²Ð¸Ñ‚ÐµÐ»Ñ (Ð¿Ñ€ÐµÐ¶Ð´Ðµ ÑƒÑÑ‚Ð°Ð½Ð¾Ð²Ð¸Ñ‚ÑŒ Ð² Ð½Ð°ÑÑ‚Ñ€Ð¾Ð¹ÐºÐ°Ñ… Ð°ÐºÐºÐ°ÑƒÐ½Ñ‚Ð° smsc.ru)";
+$MESS["IBLOCK_DESC"] = "Ð¡Ð¾Ñ…Ñ€Ð°Ð½ÑÑ‚ÑŒ Ð·Ð°ÐºÐ°Ð·Ñ‹ Ð² Ð¸Ð½Ñ„Ð¾Ð±Ð»Ð¾Ðº";
+$MESS["EVENT_MESS_DESC"] = "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ð¸Ð´ÐµÐ½Ñ‚Ð¸Ñ„Ð¸ÐºÐ°Ñ‚Ð¾Ñ€ Ð¿Ð¾Ñ‡Ñ‚Ð¾Ð²Ð¾Ð³Ð¾ ÑˆÐ°Ð±Ð»Ð¾Ð½Ð°";
 
-$MESS["BUTTON_VAL_DESC"] = "Ñîõðàíèòü";
-$MESS["BUTTON_TITLE_DESC"] = "Ñîõðàíèòü èçìåíåíèÿ è âåðíóòüñÿ";
+$MESS["BUTTON_VAL_DESC"] = "Ð¡Ð¾Ñ…Ñ€Ð°Ð½Ð¸Ñ‚ÑŒ";
+$MESS["BUTTON_TITLE_DESC"] = "Ð¡Ð¾Ñ…Ñ€Ð°Ð½Ð¸Ñ‚ÑŒ Ð¸Ð·Ð¼ÐµÐ½ÐµÐ½Ð¸Ñ Ð¸ Ð²ÐµÑ€Ð½ÑƒÑ‚ÑŒÑÑ";
 ?>

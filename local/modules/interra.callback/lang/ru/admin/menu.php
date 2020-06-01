@@ -1,4 +1,4 @@
 <?
-$MESS["CBKMENU_TITLE_DESC"] = "Çàêàç çâîíêà";
-$MESS["CBKMENU_TEXT_DESC"] = "Ìîäóëü \"CallBack\"";
+$MESS["CBKMENU_TITLE_DESC"] = "Ð—Ð°ÐºÐ°Ð· Ð·Ð²Ð¾Ð½ÐºÐ°";
+$MESS["CBKMENU_TEXT_DESC"] = "ÐœÐ¾Ð´ÑƒÐ»ÑŒ \"CallBack\"";
 ?>

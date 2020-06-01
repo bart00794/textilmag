@@ -37,8 +37,8 @@ $arSkuOnePack = !is_null($arResult["PROPERTIES"]["SKU_SIZE"]["VALUE"]) ? $arResu
             <h3 class="product-title"><?= $arResult['NAME']; ?></h3>
             <div class="clearfix"></div>
             <div class="product-short-description mb--45 mb-sm--20">
-                <p class="alert alert-warning">Чтобы сделать заказ, скачайте бланк заказа, заполните его, пользуясь
-                    прайс-листом, либо составьте ваш заказ в произвольной форме и отправьте на почту <a
+                <p class="alert alert-warning">Р§С‚РѕР±С‹ СЃРґРµР»Р°С‚СЊ Р·Р°РєР°Р·, СЃРєР°С‡Р°Р№С‚Рµ Р±Р»Р°РЅРє Р·Р°РєР°Р·Р°, Р·Р°РїРѕР»РЅРёС‚Рµ РµРіРѕ, РїРѕР»СЊР·СѓСЏСЃСЊ
+                    РїСЂР°Р№СЃ-Р»РёСЃС‚РѕРј, Р»РёР±Рѕ СЃРѕСЃС‚Р°РІСЊС‚Рµ РІР°С€ Р·Р°РєР°Р· РІ РїСЂРѕРёР·РІРѕР»СЊРЅРѕР№ С„РѕСЂРјРµ Рё РѕС‚РїСЂР°РІСЊС‚Рµ РЅР° РїРѕС‡С‚Сѓ <a
                             href="mailto:textilmag@yandex.ru">textilmag@yandex.ru</a>
                 </p>
             </div>
@@ -61,12 +61,12 @@ $arSkuOnePack = !is_null($arResult["PROPERTIES"]["SKU_SIZE"]["VALUE"]) ? $arResu
                                 </td>
                                 <td class="product-name">
                                     <h3>
-                                        <a href="product-details.html"><?= (!empty($arSKU['SIZE'])) ? $arSKU['SIZE'] : "не задан"; ?></a>
+                                        <a href="product-details.html"><?= (!empty($arSKU['SIZE'])) ? $arSKU['SIZE'] : "РЅРµ Р·Р°РґР°РЅ"; ?></a>
                                     </h3>
                                 </td>
                                 <td class="product-price sku-price">
                                     <div class="product-price-wrapper">
-                                        <span class="money"><?= $arSKU['PRICE']; ?> руб.</span>
+                                        <span class="money"><?= $arSKU['PRICE']; ?> СЂСѓР±.</span>
                                     </div>
                                 </td>
                             </tr>
@@ -75,18 +75,18 @@ $arSkuOnePack = !is_null($arResult["PROPERTIES"]["SKU_SIZE"]["VALUE"]) ? $arResu
                 </div>
                 <div class="product-action flex-row align-items-center mt--40">
                     <button type="submit" class="btn btn-style-1 btn-large add-to-cart">
-                        Добавить в корзину
+                        Р”РѕР±Р°РІРёС‚СЊ РІ РєРѕСЂР·РёРЅСѓ
                     </button>
-                    <span><span id="summ_buy">00.00</span> руб.</span>
+                    <span><span id="summ_buy">00.00</span> СЂСѓР±.</span>
                 </div>
             </form>
 
-            <p class="alert alert-warning ">Обращаем Ваше внимание на то, что вся представленная на сайте продукция, ее
-                цветовые и другие
-                характеристики носят информационный характер и ни при каких условиях не являются публичной офертой.
-                Информация и цены являются действительными на момент публикации и могут быть изменены в любое время без
-                предварительного уведомления. Для получения подробной информации или размещения заказов обращайтесь к
-                менеджерам компании по телефонам: +7(905)109-31-15, +7(920)355-40-95 или пишите на электронную почту: <a
+            <p class="alert alert-warning ">РћР±СЂР°С‰Р°РµРј Р’Р°С€Рµ РІРЅРёРјР°РЅРёРµ РЅР° С‚Рѕ, С‡С‚Рѕ РІСЃСЏ РїСЂРµРґСЃС‚Р°РІР»РµРЅРЅР°СЏ РЅР° СЃР°Р№С‚Рµ РїСЂРѕРґСѓРєС†РёСЏ, РµРµ
+                С†РІРµС‚РѕРІС‹Рµ Рё РґСЂСѓРіРёРµ
+                С…Р°СЂР°РєС‚РµСЂРёСЃС‚РёРєРё РЅРѕСЃСЏС‚ РёРЅС„РѕСЂРјР°С†РёРѕРЅРЅС‹Р№ С…Р°СЂР°РєС‚РµСЂ Рё РЅРё РїСЂРё РєР°РєРёС… СѓСЃР»РѕРІРёСЏС… РЅРµ СЏРІР»СЏСЋС‚СЃСЏ РїСѓР±Р»РёС‡РЅРѕР№ РѕС„РµСЂС‚РѕР№.
+                РРЅС„РѕСЂРјР°С†РёСЏ Рё С†РµРЅС‹ СЏРІР»СЏСЋС‚СЃСЏ РґРµР№СЃС‚РІРёС‚РµР»СЊРЅС‹РјРё РЅР° РјРѕРјРµРЅС‚ РїСѓР±Р»РёРєР°С†РёРё Рё РјРѕРіСѓС‚ Р±С‹С‚СЊ РёР·РјРµРЅРµРЅС‹ РІ Р»СЋР±РѕРµ РІСЂРµРјСЏ Р±РµР·
+                РїСЂРµРґРІР°СЂРёС‚РµР»СЊРЅРѕРіРѕ СѓРІРµРґРѕРјР»РµРЅРёСЏ. Р”Р»СЏ РїРѕР»СѓС‡РµРЅРёСЏ РїРѕРґСЂРѕР±РЅРѕР№ РёРЅС„РѕСЂРјР°С†РёРё РёР»Рё СЂР°Р·РјРµС‰РµРЅРёСЏ Р·Р°РєР°Р·РѕРІ РѕР±СЂР°С‰Р°Р№С‚РµСЃСЊ Рє
+                РјРµРЅРµРґР¶РµСЂР°Рј РєРѕРјРїР°РЅРёРё РїРѕ С‚РµР»РµС„РѕРЅР°Рј: +7(905)109-31-15, +7(920)355-40-95 РёР»Рё РїРёС€РёС‚Рµ РЅР° СЌР»РµРєС‚СЂРѕРЅРЅСѓСЋ РїРѕС‡С‚Сѓ: <a
                         href="mailto:textilmag@yandex.ru">textilmag@yandex.ru</a></p>
         </div>
     </div>
@@ -96,14 +96,14 @@ $arSkuOnePack = !is_null($arResult["PROPERTIES"]["SKU_SIZE"]["VALUE"]) ? $arResu
     <div class="modal-dialog modal-dialog-centered" role="document">
         <div class="modal-content">
             <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLongTitle">Товар добавлен в корзину</h5>
+                <h5 class="modal-title" id="exampleModalLongTitle">РўРѕРІР°СЂ РґРѕР±Р°РІР»РµРЅ РІ РєРѕСЂР·РёРЅСѓ</h5>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
                 </button>
             </div>
             <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-dismiss="modal">Продолжить покупки</button>
-                <a type="button" class="btn btn-primary" href="/cart/">Перейти в корзину</a>
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">РџСЂРѕРґРѕР»Р¶РёС‚СЊ РїРѕРєСѓРїРєРё</button>
+                <a type="button" class="btn btn-primary" href="/cart/">РџРµСЂРµР№С‚Рё РІ РєРѕСЂР·РёРЅСѓ</a>
             </div>
         </div>
     </div>

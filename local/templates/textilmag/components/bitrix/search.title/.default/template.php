@@ -26,7 +26,7 @@ if($arParams["SHOW_INPUT"] !== "N"):?>
     <div class="searchform-wrapper d-none d-lg-block" id="<?=$CONTAINER_ID;?>">
         <form action="<?=$arResult["FORM_ACTION"];?>" class="searchform searchform-2">
             <input type="text" class="searchform__input" id="<?=$INPUT_ID;?>" name="q"
-                   placeholder="Íà÷íèòå ââîäèòü..." autocomplete="off">
+                   placeholder="ÐÐ°Ñ‡Ð½Ð¸Ñ‚Ðµ Ð²Ð²Ð¾Ð´Ð¸Ñ‚ÑŒ..." autocomplete="off">
             <button type="submit" class="searchform__submit">
                 <i class="dl-icon-search1"></i>
             </button>

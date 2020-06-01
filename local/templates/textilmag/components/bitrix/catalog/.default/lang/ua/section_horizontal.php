@@ -1,3 +1,3 @@
 <?
-$MESS["CT_GIFTS_SECTION_LIST_BLOCK_TITLE_DEFAULT"] = "Ïîäàðóíêè äî òîâàð³â öüîãî ðîçä³ëó";
+$MESS["CT_GIFTS_SECTION_LIST_BLOCK_TITLE_DEFAULT"] = "ÐŸÐ¾Ð´Ð°Ñ€ÑƒÐ½ÐºÐ¸ Ð´Ð¾ Ñ‚Ð¾Ð²Ð°Ñ€Ñ–Ð² Ñ†ÑŒÐ¾Ð³Ð¾ Ñ€Ð¾Ð·Ð´Ñ–Ð»Ñƒ";
 ?>

@@ -70,7 +70,7 @@ class SergarCartComponent extends CBitrixComponent
     }
 
     /**
-     * Функция для добавления товаров в корзину(сессию)
+     * Р¤СѓРЅРєС†РёСЏ РґР»СЏ РґРѕР±Р°РІР»РµРЅРёСЏ С‚РѕРІР°СЂРѕРІ РІ РєРѕСЂР·РёРЅСѓ(СЃРµСЃСЃРёСЋ)
      *
      * @param array $items
      * @return false|string

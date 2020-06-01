@@ -1,6 +1,6 @@
 <?
 require($_SERVER["DOCUMENT_ROOT"]."/bitrix/header.php");
-$APPLICATION->SetTitle("Ïîèñê");
+$APPLICATION->SetTitle("ÐŸÐ¾Ð¸ÑÐº");
 ?>
 
 <div class="container">
@@ -37,7 +37,7 @@ $APPLICATION->SetTitle("Ïîèñê");
             "USE_SUGGEST" => "N",
             "DISPLAY_TOP_PAGER" => "N",
             "DISPLAY_BOTTOM_PAGER" => "Y",
-            "PAGER_TITLE" => "Ðåçóëüòàòû ïîèñêà",
+            "PAGER_TITLE" => "Ð ÐµÐ·ÑƒÐ»ÑŒÑ‚Ð°Ñ‚Ñ‹ Ð¿Ð¾Ð¸ÑÐºÐ°",
             "PAGER_SHOW_ALWAYS" => "N",
             "PAGER_TEMPLATE" => ""
         ),

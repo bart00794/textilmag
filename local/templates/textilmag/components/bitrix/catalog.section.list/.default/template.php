@@ -4,7 +4,7 @@
     <div class="container-fluid">
         <div class="row mb--40 mb-md--30">
             <div class="col-12 text-center">
-                <h2 class="heading-secondary">Каталог</h2>
+                <h2 class="heading-secondary">РљР°С‚Р°Р»РѕРі</h2>
                 <hr class="separator center mt--25 mt-md--15">
             </div>
         </div>
@@ -18,11 +18,9 @@
                             <div class="airi-product">
                                 <div class="product-inner">
                                     <figure class="product-image">
-                                        <div class="product-image--holder">
-                                            <a href="<?=$arSec['SECTION_PAGE_URL'];?>">
-                                                <img src="<?=$arSec['PICTURE']['src'];?>" alt="<?=$arSec['NAME'];?>" class="primary-image">
-                                                <img src="<?=$arSec['PICTURE']['src'];?>" alt="<?=$arSec['NAME'];?>" class="secondary-image">
-
+                                        <div class="zoom-photo__wrap">
+                                            <a href="<?=$arSec['SECTION_PAGE_URL'];?>" class="zoom-photo__href" data-src="<?=$arSec['PICTURE']['SRC'];?>">
+                                                <img src="<?=$arSec['PICTURE_PREVIEW']['src'];?>" alt="<?=$arSec['NAME'];?>" class="zoom-photo__img">
                                             </a>
                                         </div>
                                     </figure>

@@ -26,10 +26,9 @@ $arSectionDeleteParams = array("CONFIRM" => GetMessage('CT_BCSL_ELEMENT_DELETE_C
                     <div class="airi-product" id="<?=$this->GetEditAreaId($arSection['ID']);?>">
                         <div class="product-inner">
                             <figure class="product-image">
-                                <div class="product-image--holder">
-                                    <a href="<?=$arSection['SECTION_PAGE_URL'];?>">
-                                        <img src="<?=$arSection["PICTURE"]["src"];?>" alt="<?=$arSection['NAME'];?>" class="primary-image">
-                                        <img src="<?=$arSection["PICTURE"]["src"];?>" alt="<?=$arSection['NAME'];?>" class="secondary-image">
+                                <div class="zoom-photo__wrap">
+                                    <a href="<?=$arSection['SECTION_PAGE_URL'];?>" class="zoom-photo__href" data-src="<?=$arSection['PICTURE']['SRC'];?>">
+                                        <img src="<?=$arSection['PICTURE_PREVIEW']['src'];?>" alt="<?=$arSection['NAME'];?>" class="zoom-photo__img">
                                     </a>
                                 </div>
                             </figure>
