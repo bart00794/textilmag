@@ -65,8 +65,10 @@ class SergarCartComponent extends CBitrixComponent
                             $arItem["PROPERTY_SKU_SIZE_VALUE"]
                         ) ? $arItem["PROPERTY_SKU_SIZE_VALUE"] : 1,
                         'PRICE' => $arSku['PROPERTY_PRICE_VALUE'],
-                        'PRICE_TOTAL' => (int)$arSku['PROPERTY_PRICE_VALUE'] * (int)$intCountSku,
-                        'COUNT' => $intCountSku,
+                        'PRICE_TOTAL' => (int)$arSku['PROPERTY_PRICE_VALUE'] * (int)round(
+                                $intCountSku / $arSkuOnePack
+                            ) * $arSkuOnePack,
+                        'COUNT' => (int)round($intCountSku / $arSkuOnePack) * $arSkuOnePack,
                         'SIZE' => $arSku['PROPERTY_SIZE_VALUE'],
                     ];
                 }
