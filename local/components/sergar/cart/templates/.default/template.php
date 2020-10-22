@@ -1,9 +1,14 @@
-<? if (!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED !== true) die(); ?>
+<?
+
+if (!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED !== true) {
+    die();
+} ?>
 
 <div class="page-content-inner">
     <div class="container">
         <div class="row pt--80 pb--80 pt-md--45 pt-sm--25 pb-md--60 pb-sm--40">
-            <? if (!empty($arResult['ITEMS'])) { ?>
+            <?
+            if (!empty($arResult['ITEMS'])) { ?>
                 <form action="#" method="post" class="col-12">
                     <?= bitrix_sessid_post(); ?>
                     <div class="row">
@@ -24,7 +29,8 @@
                                                 </tr>
                                                 </thead>
                                                 <tbody>
-                                                <? foreach ($arResult['ITEMS'] as $arItem): ?>
+                                                <?
+                                                foreach ($arResult['ITEMS'] as $arItem): ?>
                                                     <?
                                                     $arUrl = [
                                                         'del' => 'Y',
@@ -45,8 +51,10 @@
                                                         <td class="product-name text-left wide-column">
                                                             <h3>
                                                                 <a href="<?= $arItem['DETAIL_PAGE_URL']; ?>"><?= $arItem['NAME']; ?>
-                                                                    <? if (!empty($arItem['SIZE'])) { ?><span>
-                                                                        (<?= $arItem['SIZE'] ?>)</span><? } ?></a>
+                                                                    <?
+                                                                    if (!empty($arItem['SIZE'])) { ?><span>
+                                                                        (<?= $arItem['SIZE'] ?>)</span><?
+                                                                    } ?></a>
                                                             </h3>
                                                         </td>
                                                         <td class="product-price">
@@ -71,7 +79,8 @@
                                                     </span>
                                                         </td>
                                                     </tr>
-                                                <? endforeach; ?>
+                                                <?
+                                                endforeach; ?>
                                                 </tbody>
                                             </table>
                                         </div>
@@ -138,11 +147,13 @@
                         </div>
                     </div>
                 </form>
-            <? } else { ?>
+                <?
+            } else { ?>
                 <div class="col-lg-12">
                     <p class="text-center">В корзине сейчас ничего нет. <a href="/products/">Перейти к покупкам.</a></p>
                 </div>
-            <? } ?>
+                <?
+            } ?>
         </div>
     </div>
 </div>
