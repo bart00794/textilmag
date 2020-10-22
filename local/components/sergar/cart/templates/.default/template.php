@@ -101,8 +101,6 @@ if (!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED !== true) {
                                 <div class="table-content table-responsive">
                                     <table class="table order-table">
                                         <tbody>
-                                        <?
-                                        dump($arResult); ?>
                                         <tr>
                                             <th>Подытог</th>
                                             <td>₽<?= $arResult['SUBTOTAL']; ?></td>
