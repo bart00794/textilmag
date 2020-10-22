@@ -1,6 +1,7 @@
-.page-content-inner a{
-    color:#e64d3a;
+.page-content-inner a {
+    color: #e64d3a;
 }
-.page-content-inner a:hover{
+
+.page-content-inner a:hover {
     text-decoration: underline;
 }

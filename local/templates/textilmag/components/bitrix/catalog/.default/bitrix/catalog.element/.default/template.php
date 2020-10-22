@@ -1,21 +1,29 @@
-<? if (!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED !== true) die();
+<?
+
+if (!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED !== true) {
+    die();
+}
 
 use Bitrix\Main\Localization\Loc;
 
 Loc::loadMessages(__FILE__);
 
 
-$arSkuOnePack = !is_null($arResult["PROPERTIES"]["SKU_SIZE"]["VALUE"]) ? $arResult["PROPERTIES"]["SKU_SIZE"]["VALUE"] : 1;
+$arSkuOnePack = !is_null(
+    $arResult["PROPERTIES"]["SKU_SIZE"]["VALUE"]
+) ? $arResult["PROPERTIES"]["SKU_SIZE"]["VALUE"] : 1;
 ?>
 <div class="row">
     <div class="col-md-6 product-main-image">
-        <? if (!empty($arResult['MORE_PHOTO'])) { ?>
+        <?
+        if (!empty($arResult['MORE_PHOTO'])) { ?>
             <div class="product-image">
                 <div class="product-gallery">
                     <div class="product-gallery__large-image">
                         <div class="product-gallery__wrapper">
                             <div class="row grid-space-10">
-                                <? foreach ($arResult['MORE_PHOTO'] as $arPhoto) { ?>
+                                <?
+                                foreach ($arResult['MORE_PHOTO'] as $arPhoto) { ?>
                                     <div class="col-3 mb--10">
                                         <figure class="product-gallery__image">
                                             <a data-fancybox="gallery_<?= $arResult['ID']; ?>"
@@ -24,13 +32,15 @@ $arSkuOnePack = !is_null($arResult["PROPERTIES"]["SKU_SIZE"]["VALUE"]) ? $arResu
                                                         alt="<?= $arResult['NAME']; ?>"></a>
                                         </figure>
                                     </div>
-                                <? } ?>
+                                    <?
+                                } ?>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        <? } ?>
+            <?
+        } ?>
     </div>
     <div class="col-md-6 product-main-details mt--40 mt-md--10 mt-sm--30">
         <div class="product-summary">
@@ -45,11 +55,12 @@ $arSkuOnePack = !is_null($arResult["PROPERTIES"]["SKU_SIZE"]["VALUE"]) ? $arResu
 
 
             <form action="#" class="form--action mb--30 mb-sm--20" id="buyItem">
-                <?=bitrix_sessid_post()?>
-                <input type="hidden" name="id_item" value="<?=$arResult['ID'];?>">
+                <?= bitrix_sessid_post() ?>
+                <input type="hidden" name="id_item" value="<?= $arResult['ID']; ?>">
                 <div class="table-content table-responsive">
                     <table class="table group-product-table">
-                        <? foreach ($arResult["PRICES"] as $arSKU) { ?>
+                        <?
+                        foreach ($arResult["PRICES"] as $arSKU) { ?>
                             <tr class="sku-block">
                                 <td class="product-quantity">
                                     <div class="quantity">
@@ -61,7 +72,7 @@ $arSkuOnePack = !is_null($arResult["PROPERTIES"]["SKU_SIZE"]["VALUE"]) ? $arResu
                                 </td>
                                 <td class="product-name">
                                     <h3>
-                                        <a href="product-details.html"><?= (!empty($arSKU['SIZE'])) ? $arSKU['SIZE'] : "не задан"; ?></a>
+                                        <span><?= (!empty($arSKU['SIZE'])) ? $arSKU['SIZE'] : "не задан"; ?></span>
                                     </h3>
                                 </td>
                                 <td class="product-price sku-price">
@@ -70,7 +81,8 @@ $arSkuOnePack = !is_null($arResult["PROPERTIES"]["SKU_SIZE"]["VALUE"]) ? $arResu
                                     </div>
                                 </td>
                             </tr>
-                        <? } ?>
+                            <?
+                        } ?>
                     </table>
                 </div>
                 <div class="product-action flex-row align-items-center mt--40">
