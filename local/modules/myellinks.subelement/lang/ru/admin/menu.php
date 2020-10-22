@@ -1,9 +1,0 @@
-<?
-$MESS["SOKRAT_SUBELEMENT_MAIN"]="Субэлементы";
-$MESS["SOKRAT_SUBELEMENT_MAIN_TITLE"]="Субэлементы";
-
-$MESS["SOKRAT_SUBELEMENT_ELEMENT"]="Интерфейсы";
-$MESS["SOKRAT_SUBELEMENT_ELEMENT_TITLE"]="Интерфейсы";
-
-
-?>

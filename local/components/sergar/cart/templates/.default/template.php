@@ -86,9 +86,6 @@ if (!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED !== true) {
                                         </div>
                                     </div>
                                     <div class="col-12">
-                                        21
-                                    </div>
-                                    <div class="col-12">
                                         <button class="btn btn-fullwidth btn-style-2 mt--35" name="update"
                                                 id="updateCart">Обновить корзину
                                         </button>
@@ -105,19 +102,23 @@ if (!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED !== true) {
                                             <th>Подытог</th>
                                             <td>₽<?= $arResult['SUBTOTAL']; ?></td>
                                         </tr>
-                                        <?
-                                        if ($arResult['DELIVERY']):
-                                            ?>
-                                            <tr>
-                                                <th>Доставка</th>
-                                                <td>
+                                        <tr>
+                                            <th>Доставка</th>
+                                            <td>
+                                                <?
+                                                if ($arResult['DELIVERY']):
+                                                    ?>
+
                                                     <span>₽<?= $arResult['DELIVERY']; ?></span>
-                                                </td>
-                                            </tr>
-                                        <?
-                                        endif; ?>
+                                                <?
+                                                else: ?>
+                                                    <span>₽0</span>
+                                                <?
+                                                endif; ?>
+                                            </td>
+                                        </tr>
                                         <tr class="order-total">
-                                            <th>Итогу</th>
+                                            <th>Итог</th>
                                             <td>
                                                     <span class="product-price-wrapper">
                                                         <span class="money">₽<?= $arResult['TOTAL']; ?></span>
