@@ -1,9 +1,14 @@
-<? if (!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED !== true) die(); ?>
+<?
+
+if (!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED !== true) {
+    die();
+} ?>
 
 <div class="page-content-inner">
     <div class="container">
         <div class="row pt--80 pb--80 pt-md--45 pt-sm--25 pb-md--60 pb-sm--40">
-            <? if (!empty($arResult['ITEMS'])) { ?>
+            <?
+            if (!empty($arResult['ITEMS'])) { ?>
                 <form action="#" method="post" class="col-12">
                     <?= bitrix_sessid_post(); ?>
                     <div class="row">
@@ -24,7 +29,8 @@
                                                 </tr>
                                                 </thead>
                                                 <tbody>
-                                                <? foreach ($arResult['ITEMS'] as $arItem): ?>
+                                                <?
+                                                foreach ($arResult['ITEMS'] as $arItem): ?>
                                                     <?
                                                     $arUrl = [
                                                         'del' => 'Y',
@@ -45,8 +51,10 @@
                                                         <td class="product-name text-left wide-column">
                                                             <h3>
                                                                 <a href="<?= $arItem['DETAIL_PAGE_URL']; ?>"><?= $arItem['NAME']; ?>
-                                                                    <? if (!empty($arItem['SIZE'])) { ?><span>
-                                                                        (<?= $arItem['SIZE'] ?>)</span><? } ?></a>
+                                                                    <?
+                                                                    if (!empty($arItem['SIZE'])) { ?><span>
+                                                                        (<?= $arItem['SIZE'] ?>)</span><?
+                                                                    } ?></a>
                                                             </h3>
                                                         </td>
                                                         <td class="product-price">
@@ -71,10 +79,14 @@
                                                     </span>
                                                         </td>
                                                     </tr>
-                                                <? endforeach; ?>
+                                                <?
+                                                endforeach; ?>
                                                 </tbody>
                                             </table>
                                         </div>
+                                    </div>
+                                    <div class="col-12">
+                                        21
                                     </div>
                                     <div class="col-12">
                                         <button class="btn btn-fullwidth btn-style-2 mt--35" name="update"
@@ -85,6 +97,39 @@
                             </div>
                         </div>
                         <div class="col-lg-4">
+                            <div class="cart-totals">
+                                <div class="table-content table-responsive">
+                                    <table class="table order-table">
+                                        <tbody>
+                                        <?
+                                        dump($arResult); ?>
+                                        <tr>
+                                            <th>Подытог</th>
+                                            <td>₽<?= $arResult['SUBTOTAL']; ?></td>
+                                        </tr>
+                                        <?
+                                        if ($arResult['DELIVERY']):
+                                            ?>
+                                            <tr>
+                                                <th>Доставка</th>
+                                                <td>
+                                                    <span>₽<?= $arResult['DELIVERY']; ?></span>
+                                                </td>
+                                            </tr>
+                                        <?
+                                        endif; ?>
+                                        <tr class="order-total">
+                                            <th>Итогу</th>
+                                            <td>
+                                                    <span class="product-price-wrapper">
+                                                        <span class="money">₽<?= $arResult['TOTAL']; ?></span>
+                                                    </span>
+                                            </td>
+                                        </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
                             <div class="cart-collaterals">
                                 <div class="cart-totals">
                                     <h5 class="mb--15">Оформление заказа</h5>
@@ -138,11 +183,13 @@
                         </div>
                     </div>
                 </form>
-            <? } else { ?>
+                <?
+            } else { ?>
                 <div class="col-lg-12">
                     <p class="text-center">В корзине сейчас ничего нет. <a href="/products/">Перейти к покупкам.</a></p>
                 </div>
-            <? } ?>
+                <?
+            } ?>
         </div>
     </div>
 </div>
