@@ -1,4 +1,6 @@
 $(function () {
+    let roundTo10 = i => Math.ceil(i / 10) * 10;
+
     $(".qtybutton").on("click", function () {
         let $button = $(this);
         let newVal;
@@ -14,10 +16,15 @@ $(function () {
                 newVal = 0;
             }
         }
-        $button.parent().find("input").val(newVal);
+        $button.parent().find("input").val(roundTo10(newVal));
         summbuy();
     });
-    $('form#buyItem').on('submit',function (e) {
+    $('.quantity-input').on('change', function () {
+        let value = roundTo10($(this).val());
+        $(this).val(value);
+        summbuy();
+    });
+    $('form#buyItem').on('submit', function (e) {
         e.preventDefault();
         let formData = $(this).serializeArray();
         $.ajax({
@@ -25,25 +32,24 @@ $(function () {
             url: BX.message('TEMPLATE_PATH'),
             data: formData,
             success: function (data) {
-                if(data.status)
-                {
+                if (data.status) {
                     $('#modalBuyPopup').modal('show');
                     $("#result").html(JSON.stringify(data));
-                    console.log(data);
                 }
             },
             dataType: 'json'
         });
     });
 });
-function summbuy(){
+
+function summbuy() {
     let result = 0;
-    $("input.quantity-input").each(function(){
+    $("input.quantity-input").each(function () {
         let price = parseFloat($(this).closest('.sku-block').find('.sku-price').text());
         let value = $(this).val();
-        if(value!== "" && !isNaN(price)) {
+        if (value !== "" && !isNaN(price)) {
 
-            result = result + value*price;
+            result = result + value * price;
         }
     });
     $("span#summ_buy").text(result.toFixed(2));
