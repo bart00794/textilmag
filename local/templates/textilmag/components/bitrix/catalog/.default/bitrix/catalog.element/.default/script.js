@@ -1,26 +1,29 @@
 $(function () {
-    let roundTo10 = i => Math.ceil(i / 10) * 10;
+    function roundTo(i, size) {
+        return Math.ceil(i / size) * size;
+    }
 
     $(".qtybutton").on("click", function () {
-        let $button = $(this);
-        let newVal;
-        let oldValue = $button.parent().find('input').val();
-        let size = $button.parent().find('input').data('quantity');
-        if ($button.hasClass("inc")) {
-            newVal = parseFloat(oldValue) + size;
+        let button = $(this),
+            newValue = 0,
+            input = button.parent().find('input'),
+            oldValue = input.val(),
+            size = input.data('quantity');
+        if (button.hasClass("inc")) {
+            newValue = parseFloat(oldValue) + size;
         } else {
-            // Don't allow decrementing below zero
             if (oldValue > 1) {
-                newVal = parseFloat(oldValue) - size;
+                newValue = parseFloat(oldValue) - size;
             } else {
-                newVal = 0;
+                newValue = 0;
             }
         }
-        $button.parent().find("input").val(roundTo10(newVal));
+        input.val(roundTo(newValue, size));
         summbuy();
     });
     $('.quantity-input').on('change', function () {
-        let value = roundTo10($(this).val());
+        let size = $(this).data('quantity');
+        let value = roundTo($(this).val(),size);
         $(this).val(value);
         summbuy();
     });

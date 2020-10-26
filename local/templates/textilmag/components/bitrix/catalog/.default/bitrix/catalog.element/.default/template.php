@@ -1,5 +1,9 @@
 <?
 
+/**
+ * @var $arResult array
+ * @var $arParams array
+ */
 if (!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED !== true) {
     die();
 }
@@ -8,10 +12,7 @@ use Bitrix\Main\Localization\Loc;
 
 Loc::loadMessages(__FILE__);
 
-
-$arSkuOnePack = !is_null(
-    $arResult["PROPERTIES"]["SKU_SIZE"]["VALUE"]
-) ? $arResult["PROPERTIES"]["SKU_SIZE"]["VALUE"] : 1;
+$arSkuOnePack = $arResult["PROPERTIES"]["SKU_SIZE"]["VALUE"] ? $arResult["PROPERTIES"]["SKU_SIZE"]["VALUE"] : 1;
 ?>
 <div class="row">
     <div class="col-md-6 product-main-image">
@@ -65,7 +66,7 @@ $arSkuOnePack = !is_null(
                                 <td class="product-quantity">
                                     <div class="quantity">
                                         <input type="number" class="quantity-input" name="sku_<?= $arSKU['ID']; ?>"
-                                               id="qty" value="0" min="0" data-quantity="<?= $arSkuOnePack; ?>">
+                                               id="sku_<?= $arSKU['ID']; ?>" value="0" min="0" data-quantity="<?= $arSkuOnePack; ?>">
                                         <div class="dec qtybutton">-</div>
                                         <div class="inc qtybutton">+</div>
                                     </div>
